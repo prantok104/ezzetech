@@ -37,12 +37,14 @@ The contents of This file are outlined below >>>>
      -------*** 01. IMPORT FONTS ***-------
                 ----------------
 *************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@400;500;600;700;800;900&display=swap');
 
 /************************************************
      -------*** 02. DEFAULT CSS ***-------
                 ----------------
 *************************************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +56,8 @@ The contents of This file are outlined below >>>>
     --pcolor: #238DE6;
     --hcolor: #178BE9;
 }
-.text-color{
+
+.text-color {
     color: var(--pcolor);
 }
 
@@ -114,9 +117,11 @@ img {
     height: 450px
 }
 
+
 /*************************************
         01. Header Top CSS
 *************************************/
+
 .ezze-header-area-start {
     position: fixed;
     left: 0;
@@ -130,13 +135,18 @@ img {
     background: #fff;
     z-index: 9999999999999;
 }
+
 ul#menu {
     display: flex;
-    overflow: hidden;
 }
+
 .ezze-logo-area a>img {
     width: 170px;
 }
+ul#menu li {
+    position: relative;
+}
+
 ul#menu li a {
     color: var(--pcolor);
     padding: 36px 35px;
@@ -145,9 +155,13 @@ ul#menu li a {
     position: relative;
     z-index: 1;
     transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    display: inherit;
 }
-ul#menu li a:before, ul#menu li.active a:before{
-    position:absolute;
+
+ul#menu li a:before,
+ul#menu li.active a:before {
+    position: absolute;
     left: 0;
     bottom: -22%;
     content: '';
@@ -160,16 +174,49 @@ ul#menu li a:before, ul#menu li.active a:before{
     opacity: 0;
     transition: all 0.4s ease-in-out;
 }
-ul#menu li.active a:before{
+
+ul#menu li.active a:before {
     opacity: 1;
 }
-ul#menu li a:hover:before{
+
+ul#menu li a:hover:before {
     opacity: 1;
     transition: all 0.4s ease-in-out;
 }
-ul#menu li a:hover, ul#menu li.active a{
+
+ul#menu li a:hover,
+ul#menu li.active a {
     color: #fff;
     transition: all 0.4s ease-in-out;
+}
+
+ul#menu li ul.sub-menu {
+    position: absolute;
+    left: 0;
+    background: #238DE6;
+    z-index: 9999;
+    width: 260px;
+    top: 122px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+ul#menu li:hover ul.sub-menu{
+    visibility: visible;
+    opacity: 1;
+    top: 102px;
+}
+ul#menu li ul.sub-menu li a {
+    color: #fff;
+    padding: 14px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+ul#menu li ul.sub-menu li {border-bottom: 1px solid #1f7cca;}
+
+ul#menu li ul.sub-menu li a:hover {
+    background: #1281de;
 }
 .ezze-header-right-context a {
     padding: 15px 30px;
@@ -179,15 +226,18 @@ ul#menu li a:hover, ul#menu li.active a{
     border: 1px solid var(--pcolor);
 }
 
+
 /*************************************
         02. Hero Content CSS
 *************************************/
-.ezze-main-area-start{
+
+.ezze-main-area-start {
     background: url('../images/elements/dots.png') no-repeat center center / cover;
     position: relative;
     z-index: 1;
     height: 100vh;
 }
+
 .ezze-main-content-area {
     height: 100vh;
     display: flex;
@@ -195,12 +245,14 @@ ul#menu li a:hover, ul#menu li.active a{
     justify-content: space-between;
     padding-top: 103px;
 }
+
 .ezze-main-context-area h3 {
     padding: 5px 30px;
     position: relative;
     z-index: 1;
     display: inline-block;
 }
+
 .ezze-main-context-area h3:before {
     position: absolute;
     left: 3px;
@@ -210,6 +262,7 @@ ul#menu li a:hover, ul#menu li.active a{
     height: 3px;
     background: #000;
 }
+
 .ezze-main-context-area h3:after {
     position: absolute;
     right: 3px;
@@ -219,6 +272,7 @@ ul#menu li a:hover, ul#menu li.active a{
     height: 3px;
     background: #000;
 }
+
 .ezze-main-context-area strong {
     font-family: 'Roboto', serif;
     font-weight: 900;
@@ -228,23 +282,28 @@ ul#menu li a:hover, ul#menu li.active a{
     line-height: 1;
     margin-bottom: 30px;
 }
-.ezze-main-context-area strong span{
+
+.ezze-main-context-area strong span {
     color: var(--pcolor);
     display: none!important;
 }
+
 .ezze-main-context-area strong span.is-visible {
     display: inline-block!important;
 }
+
 .ezze-main-context-area h1 {
     font-size: 50px;
     text-transform: capitalize;
     font-weight: 600;
     margin-bottom: 30px;
 }
+
 .ezze-main-context-area h1 span {
     color: var(--pcolor);
     display: block;
 }
+
 .ezze-main-context-area a.ezze-df-btn {
     padding: 15px 42px;
     background: var(--pcolor);
@@ -254,13 +313,16 @@ ul#menu li a:hover, ul#menu li.active a{
     text-transform: uppercase;
     border-radius: 7px;
 }
+
 .ezze-main-context-area {
     width: 60%;
 }
+
 .ezze-main-context-right-circle {
     width: 40%;
 }
-.ezze-circle-bg{
+
+.ezze-circle-bg {
     width: 366px;
     height: 385px;
     display: flex;
@@ -270,7 +332,8 @@ ul#menu li a:hover, ul#menu li.active a{
     position: relative;
     z-index: 1;
 }
-.ezze-circle-bg:after{
+
+.ezze-circle-bg:after {
     position: absolute;
     left: 0;
     top: 0;
@@ -281,6 +344,7 @@ ul#menu li a:hover, ul#menu li.active a{
     z-index: -1;
     animation: rotateme 60s infinite linear;
 }
+
 @keyframes rotateme {
     from {
         -webkit-transform: rotate(0deg);
@@ -291,49 +355,61 @@ ul#menu li a:hover, ul#menu li.active a{
         transform: rotate(360deg);
     }
 }
+
 .ezze-circle-context {
     color: #fff;
     text-align: center;
 }
+
 .ezze-circle-context span {
     display: block;
     font-size: 29px;
 }
+
 .ezze-circle-context strong {
     font-size: 90px;
     line-height: 1;
 }
+
 .ezze-circle-context strong>span {
     font-size: 136px;
     display: inline;
 }
+
 .ezze-main-context-area p {
     font-size: 20px;
     margin-bottom: 35px;
     opacity: 0.7;
     text-align: justify;
 }
+
+
 /* CoBrands area css */
+
 .ezze-cobrand-area-start {
     box-shadow: 0 10px 50px 0 rgb(53 82 99 / 9%);
     padding: 40px 0;
     background: #F3F8FC;
 }
+
 .ezze-cobrand-context-area {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .ezze-cobrand-context-title {
     width: 20%;
     opacity: 0.6;
 }
+
 .ezze-cobrand-context-body {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .ezze-cobrand-context-body a>img {
     width: 100%;
     padding: 23px;
@@ -341,24 +417,29 @@ ul#menu li a:hover, ul#menu li.active a{
     opacity: 0.5;
     transition: all 0.3s ease-in-out;
 }
+
 .ezze-cobrand-context-body a>img:hover {
     filter: grayscale(0);
     opacity: 1;
 }
 
+
 /* Services area css */
+
 .ezze-service-area-start {
     position: relative;
     background: #182C55;
     color: #fff;
     min-height: 880px;
 }
+
 .ezze-service-area-start img {
     width: 54%;
     position: absolute;
     left: -152px;
     top: auto;
 }
+
 .ezze-total-grab-area {
     width: 400px;
     height: 400px;
@@ -380,30 +461,38 @@ ul#menu li a:hover, ul#menu li.active a{
 .single-grab-area:nth-child(2) {
     transform: rotate(45deg);
 }
+
 .single-grab-area:nth-child(3) {
     transform: rotate(90deg);
 }
+
 .single-grab-area:nth-child(4) {
     transform: rotate(135deg);
 }
+
 .single-grab-area:nth-child(5) {
     transform: rotate(180deg);
 }
+
 .single-grab-area:nth-child(6) {
     transform: rotate(225deg);
 }
+
 .single-grab-area:nth-child(7) {
     transform: rotate(270deg);
 }
+
 .single-grab-area:nth-child(8) {
     transform: rotate(315deg);
 }
+
 .ezze-service-context {
     height: 681px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .single-grab-area i {
     width: 80px;
     height: 80px;
@@ -419,13 +508,16 @@ ul#menu li a:hover, ul#menu li.active a{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-.single-grab-area i.active{
+
+.single-grab-area i.active {
     background: var(--pcolor);
 }
-.single-grab-area i:hover{
+
+.single-grab-area i:hover {
     background: var(--hcolor);
     color: #fff;
 }
+
 .ezze-service-output {
     width: 350px;
     height: 350px;
@@ -440,32 +532,38 @@ ul#menu li a:hover, ul#menu li.active a{
     animation: wave 7s linear infinite;
     transform: translate(0);
 }
+
 @keyframes wave {
-    20%{
+    20% {
         border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
     }
-    40%{
+    40% {
         border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
     }
-    60%{
+    60% {
         border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
     }
-    80%{
+    80% {
         border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
     }
 }
+
 .ezze-service-output h1 {
     font-size: 26px;
     text-transform: capitalize;
 }
+
 .ezze-text-area {
     text-align: center;
 }
+
 .ezze-text-area h2 {
     text-transform: uppercase;
 }
 
+
 /* Btm to top */
+
 .progress {
     width: 60px;
     height: 60px;
@@ -479,6 +577,7 @@ ul#menu li a:hover, ul#menu li.active a{
     right: 10px;
     bottom: 20px;
 }
+
 .progress-value {
     width: 50px;
     height: 50px;
@@ -488,6 +587,7 @@ ul#menu li a:hover, ul#menu li.active a{
     justify-content: center;
     background: #fff;
 }
+
 .progress-value a {
     color: var(--pcolor);
     display: flex;
@@ -497,7 +597,9 @@ ul#menu li a:hover, ul#menu li.active a{
     justify-content: center;
 }
 
+
 /* About area css*/
+
 span.title-sub {
     color: var(--pcolor);
     font-weight: 800;
@@ -542,45 +644,51 @@ ul.ezze-about-lists li {
     transition: all 0.3s ease-in-out;
     z-index: 0;
 }
-ul.ezze-about-lists li.active{
-    background-image: linear-gradient(
-        45deg, var(--pcolor), #57b2ff);
+
+ul.ezze-about-lists li.active {
+    background-image: linear-gradient( 45deg, var(--pcolor), #57b2ff);
     color: #fff;
 }
-ul.ezze-about-lists li:before{
+
+ul.ezze-about-lists li:before {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 0;
     content: '';
-    background-image: linear-gradient(
-        45deg, var(--pcolor), #57b2ff);
+    background-image: linear-gradient( 45deg, var(--pcolor), #57b2ff);
     transition: all 0.3s ease-in-out;
     z-index: -1;
 }
-ul.ezze-about-lists li:hover{
+
+ul.ezze-about-lists li:hover {
     transform: translateY(-6px);
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
-ul.ezze-about-lists li:hover:before{
+
+ul.ezze-about-lists li:hover:before {
     height: 100%;
     transition: all 0.3s ease-in-out;
 }
+
 ul.ezze-about-lists li i {
     margin-right: 10px;
     font-size: 14px;
 }
+
 .ezze-about-images {
     position: relative;
     width: 100%;
     height: 385px;
     z-index: -1;
 }
+
 .ezze-about-images img {
     position: absolute;
 }
+
 .ezze-about-images img:nth-child(1) {
     left: 0;
     top: 0;
@@ -588,6 +696,7 @@ ul.ezze-about-lists li i {
     height: 160px;
     z-index: -1;
 }
+
 .ezze-about-images img:nth-child(3) {
     right: 0;
     bottom: 0;
@@ -595,6 +704,7 @@ ul.ezze-about-lists li i {
     height: 166px;
     z-index: -1;
 }
+
 .ezze-about-images img:nth-child(2) {
     width: 340px;
     height: 227px;
@@ -603,11 +713,13 @@ ul.ezze-about-lists li i {
     top: 20%;
     z-index: 0;
 }
+
 .ezze-recent-work-context {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .ezze-recent-single-area {
     padding: 85px 50px;
     text-align: center;
@@ -618,13 +730,16 @@ ul.ezze-about-lists li i {
     align-items: center;
     justify-content: center;
 }
+
 .ezze-recent-single-area.center {
     z-index: 0;
     min-height: 581px;
 }
+
 section.ezze-recent-work-area-start {
     background: #eff5f9;
 }
+
 .ezze-recent-single-area img {
     width: 100px;
     height: 100px;
@@ -632,15 +747,18 @@ section.ezze-recent-work-area-start {
     border-radius: 50%;
     background: #fff;
 }
+
 .ezze-recent-single-area h4 {
     font-size: 25px;
     text-transform: capitalize;
     margin-bottom: 15px;
 }
+
 .ezze-recent-single-area p {
     color: #888;
     margin-bottom: 20px;
 }
+
 a.visit-link {
     padding: 10px 30px;
     background: var(--pcolor);
@@ -648,6 +766,7 @@ a.visit-link {
     margin-top: 20px;
     border-radius: 82px;
 }
+
 span.project-title {
     position: absolute;
     top: -39px;
@@ -658,6 +777,7 @@ span.project-title {
     color: var(--pcolor);
     font-weight: 800;
 }
+
 a.view-more {
     position: absolute;
     bottom: 0;
@@ -667,12 +787,15 @@ a.view-more {
     background: var(--pcolor);
     border-radius: 5px 5px 0 0;
 }
+
 .ezze-recent-single-area a.title {
     color: #000;
 }
+
 a.title {
     color: #000;
 }
+
 .recent-image-bg {
     width: 140px;
     height: 140px;
@@ -684,40 +807,50 @@ a.title {
     border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
     animation: wave 7s linear infinite;
 }
-.center .recent-image-bg, .center a {
+
+.center .recent-image-bg,
+.center a {
     background: #0058a3;
 }
+
 .center a.title {
     background: #fff;
 }
+
 img.achi-element {
     width: 16%;
     position: absolute;
     right: 0;
     top: -64%;
 }
+
 .ezze-achi-area-start {
     position: relative;
     background: var(--pcolor);
     padding: 150px 0;
 }
+
 .ezze-achi-area-context {
     display: flex;
     justify-content: space-between;
 }
+
 .ezze-single-achi {
     width: 32%;
     color: #fff;
 }
+
 .ezze-single-achi i {
     font-size: 48px;
     margin-bottom: 23px;
 }
+
 .ezze-single-achi h4 {
     font-size: 25px;
     margin-bottom: 22px;
     text-transform: uppercase;
 }
+
 .ezze-project-title {
     position: absolute;
     left: 50%;
@@ -727,6 +860,7 @@ img.achi-element {
     padding: 15px 35px;
     text-transform: uppercase;
 }
+
 .ezze-project-title h4 {
     font-weight: 800;
     color: #000000;
@@ -734,11 +868,13 @@ img.achi-element {
 
 
 /*Employee css*/
+
 .ezze-all-employee-area {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
+
 .emploee-image-area {
     width: 100%;
     height: 350px;
@@ -746,18 +882,21 @@ img.achi-element {
     background: #1c74bf;
     z-index: 0;
 }
+
 .emploee-image-area img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     padding-top: 5px;
 }
+
 .single-employee-context {
     width: 24%;
     box-shadow: 0 34px 46px rgb(197 205 216 / 30%);
     max-height: 420px;
     overflow: hidden;
 }
+
 .emploee-image-area:after {
     position: absolute;
     content: '';
@@ -768,12 +907,14 @@ img.achi-element {
     left: 0;
     top: 0;
 }
+
 .employee-info a {
     display: block;
     color: var(--pcolor);
     font-weight: 500;
     font-size: 22px;
 }
+
 .employee-info {
     text-align: center;
     padding: 8px 10px;
@@ -782,12 +923,14 @@ img.achi-element {
     z-index: 0;
     background: #fff;
 }
+
 .employee-info span {
     opacity: 0.7;
     font-size: 12px;
     display: block;
     text-transform: capitalize;
 }
+
 .employee-info:after {
     position: absolute;
     content: '';
@@ -799,6 +942,7 @@ img.achi-element {
     z-index: -1;
     background-repeat: no-repeat;
 }
+
 ul.social-icon {
     display: flex;
     align-items: center;
@@ -806,6 +950,7 @@ ul.social-icon {
     margin: 15px 0;
     gap: 9px;
 }
+
 ul.social-icon li a {
     display: flex;
     align-items: center;
@@ -816,25 +961,235 @@ ul.social-icon li a {
     background: var(--pcolor);
     color: #fff;
 }
+
 .single-employee-context:hover .employee-info {
     transform: translateY(-61px);
 }
+
+
+/*PhotoGallery css*/
+
 .ezze-photo-area-satrt {
     background: #F3F8FC;
+    position: relative;
+}
+
+.ezze-photo-gallery.owl-carousel {
+    z-index: 0
+}
+
+.ezze-single-photo {
+    background: #fff;
+}
+
+.ezze-photo-gallery.owl-carousel .owl-item:nth-child(even) {
+    margin-top: 25px;
+}
+
+.ezze-single-photo a img {
+    width: 100%;
+    height: 332px;
+    object-fit: cover;
+}
+
+.ezze-photo-gallery.ezze-photo-gallery.owl-carousel .owl-item .ezze-single-photo a img {
+    filter: grayscale(1) blur(2px);
+}
+
+.ezze-photo-gallery.ezze-photo-gallery.owl-carousel .owl-item.center a img {
+    filter: blur(0);
+}
+
+
+/*Contact us css*/
+
+.ezze-contact-area-start {
+    background-image: url(../images/contact/contactbg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 20%;
+}
+
+.ezze-contact-content h3 {
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.ezze-contact-content p {
+    margin-bottom: 35px;
+}
+
+.ezze-contact-content a {
+    color: #fff;
+    padding: 15px 40px;
+    background: var(--pcolor);
+    border-radius: 33px;
+}
+
+
+/*Footer area css*/
+footer.footer-area-start {
+    background: #242424;
+    color: #fff;
+}
+
+.single-footer-context p {
+    margin-top: 25px;
+}
+
+
+ul.footer-menu li a {
+    color: #fff;
+    padding: 8px 0;
+    display: block;
+}
+
+ul.footer-menu {
+    column-count: 2;
+}
+
+.single-footer-context h4 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 29px;
+}
+
+.single-footer-context form input {
+    border-radius: 0;
+    padding: 25px;
+}
+
+.single-footer-context button {
+    border: 0;
+    outline: 0;
+    background: #238DE6;
+    color: #fff;
+    padding: 15px 10px;
+    text-transform: uppercase;
+}
+
+.single-footer-context .input-group-text {
+    padding: 0;
+}
+.footer-social-icon-area a {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.footer-social-icon-area {
+    margin-top: 40px;
+}
+
+.facebook{
+    background: #4267B2;
+}
+
+.instagram{
+    background: #3f729b ;
+}
+
+.twitter{
+    background: #00acee ;
+}
+
+.youtube{
+    background: #FF0000;
+}
+
+.linkedin{
+    background: #0077b5;
+}
+
+/* Search  area CSS*/
+.ezze-search-area-start {
+    margin-top: 100px;
+    background: #F1F3F4;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+}
+.ezze-search-area-start.open-search{
+    height: 140px;
+}
+.ezze-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 140px;
+}
+
+.ezze-input-group input {
+    padding: 18px 18px 18px 60px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.ezze-input-group button {
+    position: absolute;
+    left: 0;
+    border: 0;
+    padding: 18px;
+    background: transparent;
+}
+
+.search-area-close {
+    position: absolute;
+    right: 0;
+    padding: 15px 27px;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.search-area-close:hover {
+    opacity: 1;
+}
+
+
+/* Service page CSS*/
+.ezze-services-area-start {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
 }
-.ezze-single-photo {
-    background: #fff;
-    width: 16%;
+
+.ezze-single-service-area {
+    width: 25%;
+    padding: 100px 40px 60px 40px;
+    text-align: center;
+    min-height: 474px;
+    background: #E4E4E4;
 }
-.ezze-single-photo:nth-child(even) {
-    margin-top: 45px;
+
+.ezze-single-service-area img {
+    width: 110px;
+    margin-bottom: 60px;
 }
-.ezze-single-photo img {
-    width: 100%;
-    height: 274px;
-    object-fit: contain;
+
+.ezze-single-service-area p {
+    margin-top: 15px;
+}
+
+.ezze-single-service-area h2 {
+    font-size: 28px;
+}
+
+.ezze-single-service-area:nth-child(odd) {
+    background: #131619;
+    color: #fff;
+}
+
+.ezze-single-service-area:nth-child(odd) p {
+    color: #BEBEBE;
 }

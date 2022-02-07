@@ -1,4 +1,5 @@
 <?php include('header.php');?>
+<?php include('hero.php');?>
 
 <!-- Ezze co-brand area start -->
 <section class="ezze-cobrand-area-start">
@@ -166,8 +167,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="ezze-emplo-title ezze-about-area-context">
-                    <span class="title-sub">Meet our Team</span>
-                    <h4>Our Working <span class="text-color">Experts</span></h4>
+                    <span class="title-sub">Meet our Team </span>
+                    <h4 class="d-flex align-items-center justify-content-between"><span>Our Working <span class="text-color">Experts</span></span> <a href="javascript:void(0)">View All</a></h4>
                 </div>
             </div>
             <div class="col-md-12">
@@ -241,32 +242,47 @@
 
 <!--Photos area start-->
 <div class="ezze-photo-area-satrt space">
-    <div class="ezze-single-photo">
-        <img src="assets/images/employee/1.png" alt="Employee">
+    <div class="ezze-project-title bg-white text-center">
+        <h4 style="color: var(--pcolor)">Photo gallery</h4>
+        <a href="javascript:void(0)">View All</a>
     </div>
-    <div class="ezze-single-photo">
-        <img src="assets/images/employee/1.png" alt="Employee">
-    </div>
-    <div class="ezze-single-photo">
-        <img src="assets/images/employee/1.png" alt="Employee">
-    </div>
-    <div class="ezze-single-photo">
-        <img src="assets/images/employee/1.png" alt="Employee">
-    </div>
-    <div class="ezze-single-photo">
-        <img src="assets/images/employee/1.png" alt="Employee">
-    </div>
-    <div class="ezze-single-photo">
-        <img src="assets/images/employee/1.png" alt="Employee">
-    </div>
-    <div class="ezze-single-photo">
-        <img src="assets/images/employee/1.png" alt="Employee">
-    </div>
-    <div class="ezze-single-photo">
-        <img src="assets/images/employee/1.png" alt="Employee">
+    <div class="ezze-photo-gallery owl-carousel owl-theme gallery">
+        <div class="ezze-single-photo">
+            <a href="assets/images/photo-gallery/1.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/1.jpg" alt="Photo gallery"></a>
+        </div>
+        <div class="ezze-single-photo">
+            <a href="assets/images/photo-gallery/2.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/2.jpg" alt="Photo gallery"></a>
+        </div>
+        <div class="ezze-single-photo">
+            <a href="assets/images/photo-gallery/3.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/3.jpg" alt="Photo gallery"></a>
+        </div>
+        <div class="ezze-single-photo">
+            <a href="assets/images/photo-gallery/4.png" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/4.png" alt="Photo gallery"></a>
+        </div>
+        <div class="ezze-single-photo">
+            <a href="assets/images/photo-gallery/1.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/1.jpg" alt="Photo gallery"></a>
+        </div>
+        <div class="ezze-single-photo">
+            <a href="assets/images/photo-gallery/2.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/2.jpg" alt="Photo gallery"></a>
+        </div>
     </div>
 </div>
 <!--Photos area end-->
 
-<div class="h"></div>
+<!-- Contact area start -->
+<div class="ezze-contact-area-start space-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="ezze-contact-content text-center">
+                    <span class="title-sub">Let's get started</span>
+                    <h3>Are you ready for a better, more productive business?</h3>
+                    <p>Stop worrying about technology problems. Focus on your business. Let us provide the support you deserve.</p>
+                    <a href="javascript:void(0)">Contact us Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact area end -->
 <?php include('footer.php');?>

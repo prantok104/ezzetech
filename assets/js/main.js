@@ -1,6 +1,6 @@
-(function ($) {
+(function($) {
     "use strict";
-    $(document).ready(function () {
+    $(document).ready(function() {
         /****************************************
               -------*** JS Table ***-------
                      ----------------
@@ -26,7 +26,7 @@
              -------*** 01. PRELOADER JS ***-------
                         ----------------
         *************************************************/
-        setTimeout(function () {
+        setTimeout(function() {
             $('.preloader').fadeOut();
         }, 30);
 
@@ -36,7 +36,7 @@
              -------*** 02. BOTTOMtoTOP JS ***-------
                          ----------------
         *************************************************/
-        $(window).scroll(function () {
+        $(window).scroll(function() {
             if ($(this).scrollTop() > 600) {
                 $('.btm-to-top').show();
             } else {
@@ -82,7 +82,7 @@
              -------*** 04. STICKY HEADER JS ***-------
                          -----------------
         *************************************************/
-        $(window).scroll(function () {
+        $(window).scroll(function() {
             var sticky = $('.headerclass'),
                 scroll = $(window).scrollTop();
             if (scroll < 200) sticky.removeClass('sticky');
@@ -108,15 +108,11 @@
         *************************************************/
         AOS.init();
 
-
-
         /************************************************
              -------*** 07. MODAL VIDEO JS ***-------
                          -----------------
         *************************************************/
         $(".js-modal-btn").modalVideo();
-
-
 
         /************************************************
              -------*** 08. PARALLAX JS ***-------
@@ -125,8 +121,6 @@
         $('.classname').parallax({
             imageSrc: 'assets/images/newslater-bg.png'
         });
-
-
 
         /************************************************
              -------*** 09. VANILLA TILT JS ***-------
@@ -137,7 +131,6 @@
             speed: 400
         });
 
-
         /************************************************
              -------*** 10. MOBILE MENU JS ***-------
                          ----------------
@@ -146,46 +139,42 @@
             prependTo: '#mobile-menu-here'
         });
 
-
-
-
-
-
         /************************************************
              -------*** 11. About SLIDER JS ***-------
                         -------------------
         *************************************************/
-        // $('.ezze-photo-gallery').owlCarousel({
-        //     animateOut: 'fadeOut',
-        //     animateIn: 'fadeIn',
-        //     loop: true,
-        //     margin: 0,
-        //     autoplay: true,
-        //     autoplayTimeout: 4500,
-        //     autoplayHoverPause: true,
-        //     nav: false,
-        //     dots: true,
-        //     responsive: {
-        //         0: {
-        //             items: 1
-        //         },
-        //         480: {
-        //             items: 1
-        //         },
-        //         600: {
-        //             items: 1
-        //         },
-        //         1000: {
-        //             items: 6
-        //         },
-        //         1200: {
-        //             items: 6
-        //         },
-        //         1900{
-        //             items: 6
-        //         }
-        //     }
-        // });
+        $('.ezze-photo-gallery').owlCarousel({
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 4500,
+            autoplayHoverPause: true,
+            nav: false,
+            dots: false,
+            center: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 5
+                },
+                1200: {
+                    items: 5
+                },
+                1900: {
+                    items: 5
+                }
+            }
+        });
 
 
         /************************************************
@@ -248,19 +237,19 @@
              -------*** 16. POPUP JS JS ***-------
                         -------------------
         *************************************************/
-        $('#calendar-btn').on('click', function () {
+        $('#calendar-btn').on('click', function() {
             $('.bp-event-calender').toggle('fast');
         });
-        $('.close-btn').on('click', function () {
+        $('.close-btn').on('click', function() {
             $('.bp-event-calender').hide('fast');
         });
 
 
-         /************************************************
+        /************************************************
              -------*** 17. Services click active JS ***-------
                         -------------------
         *************************************************/
-        $('.single-grab-area i').click(function(){
+        $('.single-grab-area i').click(function() {
             $('.single-grab-area i').removeClass('active');
             $(this).addClass('active');
 
@@ -273,39 +262,46 @@
         });
 
 
-
         /************************************************
              -------*** 18. Btm to top Percentage JS ***-------
                         -------------------
         *************************************************/
-        $(()=>{
-            function percentageCount(){
+        $(() => {
+            function percentageCount() {
                 var height = $('body').innerHeight();
                 var currentPosition = window.pageYOffset;
 
-                var percent = (currentPosition * 100 / height);
+                var percent = (currentPosition * 100 / height) + 14;
                 percent = percent;
                 return Math.floor(percent);
             }
 
-            $(window).scroll(()=>{
-                $('.progress').css('background', 'conic-gradient("#000"' +' '+percentageCount()+'"%", "red"'+' '+percentageCount()+'"%")');
-                $('#output-value').html(percentageCount()+'%');
+            $(window).scroll(() => {
+                $('.progress').css('background', 'conic-gradient("#000"' + ' ' + percentageCount() + '"%", "red"' + ' ' + percentageCount() + '"%")');
+                $('#output-value').html(percentageCount() + '%');
             });
         });
 
 
 
         var myDate = new Date();
-            myDate.setDate(myDate.getDate() + 2);
-            $("#countdown").countdown(myDate, function (event) {
-                $(this).html(
-                    event.strftime(
-                        '<div class="timer-wrapper"><div class="time">%D</div><span class="text">days</span></div><div class="timer-wrapper"><div class="time">%H</div><span class="text">hrs</span></div><div class="timer-wrapper"><div class="time">%M</div><span class="text">mins</span></div><div class="timer-wrapper"><div class="time">%S</div><span class="text">sec</span></div>'
-                    )
-                );
-            });
+        myDate.setDate(myDate.getDate() + 2);
+        $("#countdown").countdown(myDate, function(event) {
+            $(this).html(
+                event.strftime(
+                    '<div class="timer-wrapper"><div class="time">%D</div><span class="text">days</span></div><div class="timer-wrapper"><div class="time">%H</div><span class="text">hrs</span></div><div class="timer-wrapper"><div class="time">%M</div><span class="text">mins</span></div><div class="timer-wrapper"><div class="time">%S</div><span class="text">sec</span></div>'
+                )
+            );
+        });
 
+
+        // Search Option show and hide
+        $('#search-btn').on('click', function(){
+           $('.ezze-search-area-start').toggleClass('open-search');
+        });
+        $('.search-area-close').on('click', function(){
+            $('.ezze-search-area-start').toggleClass('open-search');
+        });
 
 
 
