@@ -1015,7 +1015,7 @@ ul.social-icon li a {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 15px;
-    margin-top: 30px;
+    margin-top: 6px;
 }
 
 .ezze-contact-content p {
@@ -1084,6 +1084,7 @@ ul.footer-menu {
     border-radius: 50%;
     font-size: 22px;
     margin-right: 8px;
+    transition: all 0.3s ease-in-out;
 }
 
 .footer-social-icon-area {
@@ -1109,7 +1110,12 @@ ul.footer-menu {
 .linkedin{
     background: #0077b5;
 }
-
+ul.footer-menu li a:hover {
+    color: #238DE6;
+}
+.footer-social-icon-area a:hover{
+    transform: rotate(360deg);
+}
 /* Search  area CSS*/
 .ezze-search-area-start {
     margin-top: 100px;
@@ -1168,7 +1174,7 @@ ul.footer-menu {
     width: 25%;
     padding: 100px 40px 60px 40px;
     text-align: center;
-    min-height: 474px;
+    min-height: 476px;
     background: #E4E4E4;
 }
 
@@ -1192,4 +1198,121 @@ ul.footer-menu {
 
 .ezze-single-service-area:nth-child(odd) p {
     color: #BEBEBE;
+}
+
+/*Service Page CSS*/
+.ezze-bread-area-satrt {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.ezze-bread-area-satrt:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
+.ezze-bread-content-area h3 {
+    display: inline-block;
+    background: var(--pcolor);
+    padding: 15px 35px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.ezze-bread-link-area {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 15px;
+    color: #000;
+    text-transform: capitalize;
+    border-radius: 5px 5px 0 0;
+}
+
+.ezze-bread-content-area {
+    padding: 120px 0;
+}
+.ezze-all-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.ezze-service-main-area-start {
+    background: #EFF5F9;
+}
+
+.ezze-single-main-service {
+    padding: 55px 30px;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    border-radius: 7px;
+    width: 31.5%;
+    transition: all 0.3s ease-in-out;
+}
+
+.ezze-single-main-service i {
+    font-size: 80px;
+    opacity: 0.8;
+    color: var(--pcolor);
+}
+
+.ezze-single-main-service p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.ezze-single-main-service a {
+    text-transform: capitalize;
+    color: var(--pcolor);
+}
+.ezze-single-main-service:hover{
+    background: var(--pcolor);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.ezze-single-main-service:hover a, .ezze-single-main-service:hover i{
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+.ezze-df-project-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.ezze-df-project-title span {
+    color: var(--pcolor);
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.ezze-df-project-title h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 38px;
+}
+
+
+/* Hover Design*/
+
+.ezze-header-right-context a:hover, .ezze-main-context-area a.ezze-df-btn:hover, a.visit-link:hover, .ezze-contact-content a:hover {
+    background: transparent;
+    color: var(--pcolor);
+    border: 1px solid var(--pcolor);
 }
