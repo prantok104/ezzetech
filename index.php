@@ -139,17 +139,17 @@
             <div class="col-md-12">
                 <div class="ezze-achi-area-context">
                     <div class="ezze-single-achi">
-                        <i class="fal fa-trophy"></i>
+                        <i class="fal fa-mobile"></i>
                         <h4>National Mobile App Development Award-15</h4>
                         <p>Awarded For Live Blood Bank Mobile Application, Category- Health & Environment, Position: Runner-up</p>
                     </div>
                     <div class="ezze-single-achi">
-                        <i class="fal fa-trophy"></i>
+                        <i class="fal fa-video"></i>
                         <h4>Best Live Streaming Award</h4>
                         <p>Online Streaming Partnership: Bangladesh ICT Expo-2015 (15 June to 17 June) at BICC</p>
                     </div>
                     <div class="ezze-single-achi">
-                        <i class="fal fa-trophy"></i>
+                        <i class="fal fa-guitar"></i>
                         <h4>Arijit Singh Live In Concert</h4>
                         <p>Arijit Singh Live in Concert: 12th Dec 2014 — at Jamuna Future Park, Dhaka</p>
                     </div>

@@ -73,4 +73,54 @@
 </section>
 <!--About area end-->
 
+
+<!--Count area start-->
+    <section class="ezze-count-area-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ezze-count-content">
+                        <div class="ezze-single-content">
+                            <div class="ezze-count-icon">
+                                <i class="fal fa-umbrella"></i>
+                            </div>
+                            <div class="ezze-count-body">
+                                <span class="counter">500</span>
+                                <h3>Projects Completed</h3>
+                            </div>
+                        </div>
+                        <div class="ezze-single-content">
+                            <div class="ezze-count-icon">
+                                <i class="fal fa-users"></i>
+                            </div>
+                            <div class="ezze-count-body">
+                                <span class="counter">1505</span>
+                                <h3>Satisfied Clients</h3>
+                            </div>
+                        </div>
+                        <div class="ezze-single-content">
+                            <div class="ezze-count-icon">
+                                <i class="fal fa-headset"></i>
+                            </div>
+                            <div class="ezze-count-body">
+                                <span class="counter">150</span>
+                                <h3>Experienced Staffs</h3>
+                            </div>
+                        </div>
+                        <div class="ezze-single-content">
+                            <div class="ezze-count-icon">
+                                <i class="fal fa-trophy-alt"></i>
+                            </div>
+                            <div class="ezze-count-body">
+                                <span class="counter">15</span>
+                                <h3>Internation Awards</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Count area end-->
+
 <?php include 'footer.php';?>
