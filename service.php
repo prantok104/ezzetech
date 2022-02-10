@@ -108,4 +108,20 @@
         <!--Service single area end-->
     </div>
 
+    <!-- Contact area start -->
+    <div class="ezze-contact-area-start space-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    <div class="ezze-contact-content text-center">
+                        <span class="title-sub">Let's get started</span>
+                        <h3>Are you ready for a better, more productive business?</h3>
+                        <p>Stop worrying about technology problems. Focus on your business. Let us provide the support you deserve.</p>
+                        <a href="javascript:void(0)">Contact us Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact area end -->
 <?php include 'footer.php';?>
