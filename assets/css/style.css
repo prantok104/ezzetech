@@ -1592,9 +1592,120 @@ p.cyber-security-list-title {
     background: var(--pcolor);
     border-bottom: 4px solid #fff;
 }
+
+/* Contact page css */
+.ezze-contact-area-content {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.ezze-contact-left {
+    width: 40%;
+    background: var(--pcolor);
+    color: #fff;
+    padding: 22px;
+    min-height: 50vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ezze-contact-left:after {
+    position: absolute;
+    right: -45px;
+    bottom: -60px;
+    content: '';
+    width: 284px;
+    height: 280px;
+    background: #35a0fa;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.ezze-contact-left:before {
+    right: -54px;
+    top: 30%;
+    content: '';
+    background: #3399ef;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.ezze-contact-right {
+    width: 60%;
+    padding: 30px;
+}
+
+.ezze-single-part {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.ezze-contact-header h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.ezze-contact-header p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.ezze-contact-left ul {
+    font-size: 14px;
+}
+
+.ezze-contact-left ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.ezze-contact-footer a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid #35a0fa;
+}
+
+.ezze-contact-page-area-start {
+    background: #EFF5F9;
+}
+
+.ezze-contact-right button {
+    outline: none;
+    border: 1px solid var(--pcolor);
+    background: var(--pcolor);
+    color: #fff;
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ezze-single-part input::placeholder, .ezze-single-part textarea::placeholder {
+    font-size: 14px;
+}
+.ezze-contact-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 /* Hover Design*/
 
-.ezze-header-right-context a:hover, .ezze-main-context-area a.ezze-df-btn:hover, a.visit-link:hover, .ezze-contact-content a:hover {
+.ezze-header-right-context a:hover, .ezze-main-context-area a.ezze-df-btn:hover, a.visit-link:hover, .ezze-contact-content a:hover, .ezze-contact-right button:hover {
     background: transparent;
     color: var(--pcolor);
     border: 1px solid var(--pcolor);

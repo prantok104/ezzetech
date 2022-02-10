@@ -7,7 +7,7 @@
                     <div class="ezze-bread-content-area">
                         <h3>Managed IT services</h3>
                         <div class="ezze-bread-link-area">
-                            <p><a href="index.php">Home</a> <span>/</span> <span>Managed IT services</span></p>
+                            <p><a href="index.php">Home</a> <span>/</span> Services <span>/</span> <span>Managed IT services</span></p>
                         </div>
                     </div>
                 </div>

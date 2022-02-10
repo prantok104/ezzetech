@@ -8,7 +8,7 @@
                     <div class="ezze-bread-content-area">
                         <h3>Services Page</h3>
                         <div class="ezze-bread-link-area">
-                            <p><a href="index.php">Home</a> <span>/</span> <span>Services page</span></p>
+                            <p><a href="index.php">Home</a> <span>/</span> Services <span>/</span> <span>Services page</span></p>
                         </div>
                     </div>
                 </div>
