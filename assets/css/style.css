@@ -1027,6 +1027,7 @@ ul.social-icon li a {
     padding: 15px 40px;
     background: var(--pcolor);
     border-radius: 33px;
+    border: 1px solid var(--pcolor);
 }
 
 
@@ -1345,6 +1346,251 @@ section.ezze-count-area-start {
 
 .ezze-single-content:nth-child(3n + 1) {
     background: var(--pcolor);
+}
+
+/*Managed Services css*/
+.ezze-managed-all-services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.single-managed-service {
+    text-align: center;
+    padding: 30px 15px;
+    background: #F3F6F9;
+    border-radius: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.single-managed-service span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8D8EA3;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+
+.single-managed-service .counter {
+    color: #000;
+    font-size: 37px;
+}
+
+.single-managed-service i {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #8D8EA3;
+    transition: all 0.3s ease-in-out;
+}
+
+.single-managed-service p {
+    font-size: 14px;
+    color: #8D8EA3;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+.single-managed-service:hover {
+    background: var(--pcolor);
+    transition: all 0.3s ease-in-out;
+}
+.single-managed-service:hover span, .single-managed-service:hover p, .single-managed-service:hover i {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.ezze-com-area-start {
+    background: #182C55;
+}
+
+.ezze-com-area-start .ezze-df-project-title h1 {
+    color: #fff;
+}
+
+.ezze-com-all-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ezze-single-com-service {
+    width: 31.5%;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 30px;
+    border: 1px solid #234385;
+    transition: all 0.3s ease-in-out;
+}
+.ezze-single-com-service:hover{
+    border-color: var(--pcolor);
+    transition: all 0.3s ease-in-out;
+}
+.ezze-single-com-service i {
+    margin-top: 6px;
+    font-size: 31px;
+    color: var(--pcolor);
+}
+
+.ezze-single-com-content h4 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.ezze-single-com-content p {
+    font-size: 14px;
+    color: #a1b2c3;
+}
+
+/*Cyber security space css*/
+.ezze-cyber-content-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ezze-single-cyber-area {
+    width: 100%;
+    background: #EFF5F9;
+}
+
+.ezze-single-cyber-area:nth-child(2n + 0) {
+    background: #fff;
+    box-shadow: 0 10px 60px rgb(0 0 0 / 10%);
+    border-bottom: 10px solid var(--pcolor);
+}
+
+.ezz-cyber-plan-top-bar {
+    background: var(--pcolor);
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.plan-container {
+    padding: 25px 29px;
+}
+
+.ezze-cyber-plan-head h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.ezze-cyber-plan-head p {
+    color: #000;
+}
+
+.plan-container p, .plan-container ul li {
+    font-size: 14px;
+    color: #5f87a2;
+}
+
+.ezze-cyber-plan-head {
+    margin-bottom: 25px;
+}
+
+.ezze-cyber-paln-price {
+    margin-bottom: 39px;
+}
+
+.ezze-cyber-paln-price strong {
+    font-size: 34px;
+}
+
+.ezze-cyber-paln-price span {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #5f87a2;
+}
+
+a.plan-btn {
+    display: block;
+    padding: 15px 35px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    transition: all 0.3s ease-in-out;
+}
+a.plan-btn:hover{
+    background: var(--pcolor);
+    color: #fff;
+    border-color: var(--pcolor);
+}
+.plan-container ul {
+    margin-left: 24px;
+    list-style: disc;
+}
+
+.plan-container ul li {
+    margin-top: 11px;
+}
+p.cyber-security-list-title {
+    color: #000;
+    font-size: 16px;
+}
+.ezze-single-cyber-area:nth-child(2n + 0) a {
+    background: var(--pcolor);
+    border-color: var(--pcolor);
+}
+
+.ezze-cyber-parallax-area-start {
+    position: relative;
+    z-index: 1;
+}
+
+.ezze-cyber-parallax-area-start:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: var(--pcolor);
+    z-index: -1;
+    opacity: 0.85;
+}
+
+.ezze-cyber-parallax-area-start {
+    text-align: center;
+    color: #fff;
+}
+
+.ezze-cyber-parallax-area-start p {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.ezz-parallax-content span {
+    text-transform: uppercase;
+}
+
+.ezz-parallax-content i {
+    font-size: 69px;
+    display: inline-flex;
+    margin-bottom: 86px;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--pcolor);
+    border-bottom: 4px solid #fff;
 }
 /* Hover Design*/
 

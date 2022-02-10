@@ -98,9 +98,9 @@
             <li><a href="javascript:void(0)">Services</a>
                 <ul class="sub-menu">
                     <li><a href="service.php">Services</a></li>
-                    <li><a href="home.php">Managed IT Services</a></li>
-                    <li><a href="home.php">Multi-function Services</a></li>
-                    <li><a href="home.php">Cyber Security</a></li>
+                    <li><a href="managed-service.php">Managed IT Services</a></li>
+                    <li><a href="cyber-security.php">Multi-function Services</a></li>
+                    <li><a href="cyber-security.php">Cyber Security</a></li>
                 </ul>
             </li>
             <li><a href="portfolio.php">Portfolio</a></li>
