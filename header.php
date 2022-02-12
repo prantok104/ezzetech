@@ -105,7 +105,14 @@
             </li>
             <li><a href="portfolio.php">Portfolio</a></li>
             <li><a href="javascript:void(0)">Pages</a></li>
-            <li><a href="javascript:void(0)">News</a></li>
+            <li><a href="javascript:void(0)">News</a>
+                <ul class="sub-menu">
+                    <li><a href="news-one.php">News Style 1</a></li>
+                    <li><a href="news-two.php">News Style 2</a></li>
+                    <li><a href="blog.php">Our Blog</a></li>
+                    <li><a href="single.php">News Details</a></li>
+                </ul>
+            </li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="javascript:void(0)" id="search-btn"><i class="fal fa-search"></i></a></li>
         </ul>

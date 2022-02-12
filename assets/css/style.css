@@ -1066,12 +1066,15 @@ ul.footer-menu {
 .single-footer-context button {
     border: 0;
     outline: 0;
-    background: #238DE6;
+    background: var(--pcolor);
     color: #fff;
     padding: 15px 10px;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
 }
-
+.single-footer-context button:hover{
+    background: var(--hcolor);
+}
 .single-footer-context .input-group-text {
     padding: 0;
 }
@@ -1679,8 +1682,13 @@ p.cyber-security-list-title {
     justify-content: center;
     color: #fff;
     border: 1px solid #35a0fa;
+    transition: all 0.3s ease-in-out;
 }
-
+.ezze-contact-footer a:hover{
+    background: #fff;
+    color: var(--pcolor);
+    border-color: var(--pcolor);
+}
 .ezze-contact-page-area-start {
     background: #EFF5F9;
 }
@@ -1701,6 +1709,90 @@ p.cyber-security-list-title {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+/* News page design css*/
+
+.ezz-news-single-style {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.ezz-news-single-style:last-child{
+    padding-bottom: 0;
+    border: 0;
+}
+.ezze-news-content-area {
+    width: 50%;
+}
+
+.ezze-news-info-area img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.ezze-news-image-area {
+    width: 50%;
+    overflow: hidden;
+}
+.ezze-news-image-area img {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.ezz-news-single-style:hover .ezze-news-image-area img{
+    transform: scale(1.1);
+}
+.ezze-news-content-area a.news-title {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 21px;
+    transition: all 0.3s ease-in-out;
+}
+.ezze-news-content-area a.news-title:hover{
+    color: var(--pcolor);
+}
+.ezze-news-content-area p {
+    color: #808080;
+    margin-bottom: 26px;
+}
+
+.ezze-news-info-area a {
+    color: var(--pcolor);
+    text-transform: capitalize;
+}
+
+.ezze-news-info-area p {
+    text-transform: capitalize;
+}
+.ezze-paginate-area-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ezze-paginate-area-start .paginate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ezze-paginate-area-start li a {
+    border: 1px solid var(--pcolor);
+    padding: 5px 15px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+
+.ezze-paginate-area-start li.active a, .ezze-paginate-area-start li a:hover {
+    background: var(--pcolor);
+    color: #fff;
 }
 
 /* Hover Design*/
