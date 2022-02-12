@@ -86,61 +86,61 @@
 </head>
 
 <body>
-<!-- Header area start -->
-<header class="ezze-header-area-start">
-    <div class="ezze-logo-area">
-        <a href="index.php"><img src="assets/images/logo/logo.png" alt="EzzeTech White Logo"></a>
-    </div>
-    <div class="ezze-main-menu-area">
-        <ul class="ezze-menu" id="menu">
-            <li class="active"><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="javascript:void(0)">Services</a>
-                <ul class="sub-menu">
-                    <li><a href="service.php">Services</a></li>
-                    <li><a href="managed-service.php">Managed IT Services</a></li>
-                    <li><a href="cyber-security.php">Multi-function Services</a></li>
-                    <li><a href="cyber-security.php">Cyber Security</a></li>
-                </ul>
-            </li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-            <li><a href="javascript:void(0)">Pages</a></li>
-            <li><a href="javascript:void(0)">News</a>
-                <ul class="sub-menu">
-                    <li><a href="news-one.php">News Style 1</a></li>
-                    <li><a href="news-two.php">News Style 2</a></li>
-                    <li><a href="blog.php">Our Blog</a></li>
-                    <li><a href="single.php">News Details</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="javascript:void(0)" id="search-btn"><i class="fal fa-search"></i></a></li>
-        </ul>
-    </div>
-    <div class="ezze-header-right-context">
-        <a href="#">Get a Quote!</a>
-    </div>
-</header>
-<!-- Header area end -->
+    <!-- Header area start -->
+    <header class="ezze-header-area-start">
+        <div class="ezze-logo-area">
+            <a href="index.php"><img src="assets/images/logo/logo.png" alt="EzzeTech White Logo"></a>
+        </div>
+        <div class="ezze-main-menu-area">
+            <ul class="ezze-menu" id="menu">
+                <li class="active"><a href="index.php">Home</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="javascript:void(0)">Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="service.php">Services</a></li>
+                        <li><a href="managed-service.php">Managed IT Services</a></li>
+                        <li><a href="multi-function.php">Multi-function Services</a></li>
+                        <li><a href="cyber-security.php">Cyber Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.php">Portfolio</a></li>
+                <li><a href="javascript:void(0)">Pages</a></li>
+                <li><a href="javascript:void(0)">News</a>
+                    <ul class="sub-menu">
+                        <li><a href="news-one.php">News Style 1</a></li>
+                        <li><a href="news-two.php">News Style 2</a></li>
+                        <li><a href="blog.php">Our Blog</a></li>
+                        <li><a href="single.php">News Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="javascript:void(0)" id="search-btn"><i class="fal fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="ezze-header-right-context">
+            <a href="#">Get a Quote!</a>
+        </div>
+    </header>
+    <!-- Header area end -->
 
-<!--Search area start-->
-<div class="ezze-search-area-start">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="ezze-search-content">
-                    <form action="#" method="POST">
-                        <div class="ezze-input-group">
-                            <button type="submit" class="search-btn"><i class="fal fa-search"></i></button>
-                            <input type="text" name="search" id="seach" placeholder="Type here..." >
-                            <div class="search-area-close">
-                                <i class="fal fa-times"></i>
+    <!--Search area start-->
+    <div class="ezze-search-area-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ezze-search-content">
+                        <form action="#" method="POST">
+                            <div class="ezze-input-group">
+                                <button type="submit" class="search-btn"><i class="fal fa-search"></i></button>
+                                <input type="text" name="search" id="seach" placeholder="Type here...">
+                                <div class="search-area-close">
+                                    <i class="fal fa-times"></i>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--Search area end-->
+    <!--Search area end-->
