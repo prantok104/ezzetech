@@ -1795,6 +1795,26 @@ p.cyber-security-list-title {
     color: #fff;
 }
 
+/* News style two css*/
+.ezze-news-style-two-all-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ezze-news-style-two-all-content .style-two {
+    width: 48%;
+    flex-flow: column;
+    padding: 0;
+    margin: 0;
+}
+
+.style-two .ezze-news-image-area, .style-two .ezze-news-content-area {
+    width: 100%;
+}
+
 /* Hover Design*/
 
 .ezze-header-right-context a:hover, .ezze-main-context-area a.ezze-df-btn:hover, a.visit-link:hover, .ezze-contact-content a:hover, .ezze-contact-right button:hover {
