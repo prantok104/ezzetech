@@ -95,6 +95,20 @@
                             </div>
                         </div>
                         <!--Single news end-->
+                        <!--Single news start-->
+                        <div class="ezz-news-single-style style-two">
+                            <div class="ezze-news-image-area">
+                                <img src="assets/images/news/2.jpg" alt="news image">
+                            </div>
+                            <div class="ezze-news-content-area">
+                                <a href="single.php" class="news-title"><h2>5 creative ways to address gaps in It resources and talent</h2></a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur delectus nobis veniam. Culpa cupiditate ea illum laudantium pariatur reprehenderit similique tenetur, ut! Beatae cum est ipsam nulla odio vel veritatis ...</p>
+                                <div class="ezze-news-info-area">
+                                    <p><img src="assets/images/client/3.png" alt="admin-image"> by <a href="#">admin</a> / february 12, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single news end-->
                     </div>
 
                     <div class="ezze-paginate-area-start">

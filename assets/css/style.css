@@ -1815,6 +1815,134 @@ p.cyber-security-list-title {
     width: 100%;
 }
 
+/* News Blog style css*/
+.ezze-blog-single{
+    box-shadow: 0 34px 46px rgb(197 205 216 / 30%);
+    margin-bottom: 30px;
+}
+.ezze-blog-single .ezze-news-image-area, .ezze-blog-single .ezze-news-content-area {
+    width: 100%;
+}
+
+.ezze-blog-single .ezze-news-content-area {
+    padding: 30px 30px 1px 30px;
+}
+
+/* Sidebar css*/
+.ezze-single-sidebar{
+    margin-bottom: 30px;
+}
+.ezze-sidebar-header h4 {
+    margin-left: 60px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.ezze-sidebar-header h4 {
+    position: relative;
+}
+
+.ezze-sidebar-header h4:after {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    content: '';
+    background: var(--pcolor);
+    height: 2px;
+    width: 50px;
+}
+
+.ezze-sidebar-body form input#search {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.ezze-sidebar-body form input#search::placeholder {
+    text-transform: capitalize;
+    color: #c3b8b8;
+}
+
+.ezze-sidebar-body form input#search:focus {
+    border-color: var(--pcolor);
+}
+
+.ezze-sidebar-body from {
+    position: relative;
+}
+
+.ezze-sidebar-body button#search-icon {
+    position: absolute;
+    right: 16px;
+    background: none;
+    padding: 16px;
+    border: none;
+    outline: none;
+}
+ul.category-widget {
+    margin-left: 30px;
+}
+
+ul.category-widget li a {
+    padding: 5px;
+    color: #4c4a4a;
+}
+ul.category-widget li a i{
+    margin-right: 15px;
+}
+ul.category-widget li a:hover {
+    color: var(--pcolor);
+    padding-left: 8px;
+}
+ul.tags-widget {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul.tags-widget li a {
+    padding: 10px 15px;
+    border: 1px solid #a79b9b;
+    color: #a79b9b;
+}
+
+ul.tags-widget li a:hover {
+    background: var(--pcolor);
+    color: #fff;
+    border-color: var(--pcolor);
+}
+
+.single-recent-posts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.single-recent-posts:last-child{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.single-recent-posts img {width: 35%;object-fit: cover;height: 75px;}
+
+.recent-post-content p {
+    color: #808080;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.recent-post-content a {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.recent-post-content a:hover{
+    color: var(--pcolor);
+}
 /* Hover Design*/
 
 .ezze-header-right-context a:hover, .ezze-main-context-area a.ezze-df-btn:hover, a.visit-link:hover, .ezze-contact-content a:hover, .ezze-contact-right button:hover {
