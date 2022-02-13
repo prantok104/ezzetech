@@ -2323,8 +2323,117 @@ ul.details li {
     color: var(--pcolor);
 }
 
+/* FAQ page css */
+.ezze-looking-area-start {
+    background: url('../images/elements/dots.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
 
+.ezze-looking-area-start:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--pcolor);
+    z-index: -1;
+    opacity: 0.6;
+}
 
+.ezze-looking-area-content {
+    text-align: center;
+    color: #fff;
+}
+
+.ezze-looking-area-content i {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+.ezze-looking-area-content h2 {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.ezze-looking-area-content p {
+    width: 54%;
+    margin: 0 auto;
+}
+
+.ezze-looking-area-content form i {
+    font-size: 16px;
+    margin: 0;
+    color: #000;
+}
+
+.ezze-looking-area-content form input {
+    width: 100%;
+    padding: 25px;
+    border: none;
+    margin-top: 30px;
+}
+
+.ezze-looking-area-content form {
+    position: relative;
+}
+
+.ezze-looking-area-content button {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    padding: 25px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.ezze-looking-area-content button:hover {
+    background: var(--pcolor);
+}
+
+.ezze-looking-area-content button:hover i {
+    color: #fff;
+}
+
+.ezze-faq-area-content .card {
+    margin-bottom: 16px;
+}
+
+.ezze-faq-area-content .card:last-child {
+    margin: 0;
+}
+
+.ezze-faq-area-content .card-header {
+    padding: 0;
+}
+
+.ezze-faq-area-content .card-header button {
+    border: 0;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    outline: none;
+}
+
+.ezze-faq-area-content .card-body {
+    color: #8e8b8b;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.ezze-faq-area-content .card-header button:focus {
+    outline: none;
+    box-shadow: none;
+}
 /* Hover Design*/
 
 .ezze-header-right-context a:hover,

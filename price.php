@@ -100,7 +100,7 @@
 
 
     <!-- Contact area start -->
-    <div class="ezze-contact-area-start space-top">
+    <div class="ezze-contact-area-start">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 m-auto">
