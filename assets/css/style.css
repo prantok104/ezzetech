@@ -2295,6 +2295,34 @@ ul.details li {
 }
 
 
+/*404 error page*/
+.ezze-error-area-content {
+    text-align: center;
+}
+
+.ezze-error-area-content strong {
+    font-size: 150px;
+    line-height: 1;
+}
+
+.ezze-error-area-content h2 {
+    text-transform: uppercase;
+}
+
+.ezze-error-area-content a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid var(--pcolor);
+    text-transform: capitalize;
+    background: var(--pcolor);
+    color: #fff;
+}
+
+.ezze-error-area-content a:hover {
+    background: #fff;
+    color: var(--pcolor);
+}
+
 
 
 /* Hover Design*/

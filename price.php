@@ -7,7 +7,7 @@
                     <div class="ezze-bread-content-area">
                         <h3>Cyber Security</h3>
                         <div class="ezze-bread-link-area">
-                            <p><a href="index.php">Home</a> <span>/</span> Services <span>/</span> <span>Cyber Security</span></p>
+                            <p><a href="index.php">Home</a> <span>/</span> pages <span>/</span> <span>Cyber Security</span></p>
                         </div>
                     </div>
                 </div>
