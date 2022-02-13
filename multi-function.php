@@ -50,4 +50,74 @@
 </div>
 <!--choose function area end-->
 
+<div class="ezze-multi-function-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ezze-muliple-stone">
+
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-anchor"></i>
+                        <a href="#">IT Services</a>
+                    </div>
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-headset"></i>
+                        <a href="#">IT Consultant</a>
+                    </div>
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-user"></i>
+                        <a href="#">IT Manager</a>
+                    </div>
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-brackets-curly"></i>
+                        <a href="#">IT Programmer</a>
+                    </div>
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-filter"></i>
+                        <a href="#">Multi Funtion</a>
+                    </div>
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-shield-check"></i>
+                        <a href="#">Cyber Security</a>
+                    </div>
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-planet-moon"></i>
+                        <a href="#">Cyber space</a>
+                    </div>
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-cloud-drizzle"></i>
+                        <a href="#">Cloud</a>
+                    </div>
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-bullhorn"></i>
+                        <a href="#">IT Support</a>
+                    </div>
+                    <div class="ezze-single-function-item">
+                        <i class="fal fa-heartbeat"></i>
+                        <a href="#">Health Care</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact area start -->
+<div class="ezze-contact-area-start space-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="ezze-contact-content text-center">
+                    <span class="title-sub">Let's get started</span>
+                    <h3>Are you ready for a better, more productive business?</h3>
+                    <p>Stop worrying about technology problems. Focus on your business. Let us provide the support you deserve.</p>
+                    <a href="javascript:void(0)">Contact us Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact area end -->
+
 <?php include('footer.php')?>

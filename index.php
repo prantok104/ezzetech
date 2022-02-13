@@ -175,10 +175,10 @@
                 <div class="ezze-all-employee-area">
                     <div class="single-employee-context">
                         <div class="emploee-image-area">
-                            <img src="assets/images/employee/1.png" alt="Employee">
+                            <img src="assets/images/client/1.png" alt="Employee">
                         </div>
                         <div class="employee-info">
-                            <a href="#" class="employee-title">Mr. maximus </a>
+                            <a href="#" class="employee-title">Mr. Maximus </a>
                             <span>Web Developer</span>
 
                             <ul class="social-icon">
@@ -190,10 +190,10 @@
                     </div>
                     <div class="single-employee-context">
                         <div class="emploee-image-area">
-                            <img src="assets/images/employee/1.png" alt="Employee">
+                            <img src="assets/images/client/4.png" alt="Employee">
                         </div>
                         <div class="employee-info">
-                            <a href="#" class="employee-title">Mr. maximus </a>
+                            <a href="#" class="employee-title">Miss. Lilana </a>
                             <span>Web Developer</span>
 
                             <ul class="social-icon">
@@ -205,10 +205,10 @@
                     </div>
                     <div class="single-employee-context">
                         <div class="emploee-image-area">
-                            <img src="assets/images/employee/1.png" alt="Employee">
+                            <img src="assets/images/client/2.png" alt="Employee">
                         </div>
                         <div class="employee-info">
-                            <a href="#" class="employee-title">Mr. maximus </a>
+                            <a href="#" class="employee-title">Miss. Luna </a>
                             <span>Web Developer</span>
 
                             <ul class="social-icon">
@@ -220,10 +220,10 @@
                     </div>
                     <div class="single-employee-context">
                         <div class="emploee-image-area">
-                            <img src="assets/images/employee/1.png" alt="Employee">
+                            <img src="assets/images/client/5.png" alt="Employee">
                         </div>
                         <div class="employee-info">
-                            <a href="#" class="employee-title">Mr. maximus </a>
+                            <a href="#" class="employee-title">Mr. Bekchum </a>
                             <span>Web Developer</span>
 
                             <ul class="social-icon">
