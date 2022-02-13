@@ -103,8 +103,14 @@
                         <li><a href="cyber-security.php">Cyber Security</a></li>
                     </ul>
                 </li>
-                <li><a href="portfolio.php">Portfolio</a></li>
-                <li><a href="javascript:void(0)">Pages</a></li>
+                <li><a href="portfolio.php">Case Study</a></li>
+                <li><a href="javascript:void(0)">Pages</a>
+                    <ul class="sub-menu">
+                        <li><a href="faq.php">FAQ's</a></li>
+                        <li><a href="price.php">Pricing</a></li>
+                        <li><a href="404.php">404 error</a></li>
+                    </ul>
+                </li>
                 <li><a href="javascript:void(0)">News</a>
                     <ul class="sub-menu">
                         <li><a href="news-one.php">News Style 1</a></li>

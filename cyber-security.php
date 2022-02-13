@@ -48,11 +48,11 @@
                             </div>
                         </div>
 
-                        <div class="ezze-single-cyber-area" aos-init aos-animate" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1500">
+                        <div class="ezze-single-cyber-area" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1500">
                             <div class="ezz-cyber-plan-top-bar">Most popular</div>
                             <div class="plan-container">
                                 <div class="ezze-cyber-plan-head">
-                                    <h4>careBasic</h4>
+                                    <h4>careAdvance</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, natus.</p>
                                 </div>
                                 <div class="ezze-cyber-paln-price">
@@ -73,7 +73,7 @@
                         <div class="ezze-single-cyber-area">
                            <div class="plan-container">
                                <div class="ezze-cyber-plan-head">
-                                   <h4>careBasic</h4>
+                                   <h4>carePremium</h4>
                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, natus.</p>
                                </div>
                                <div class="ezze-cyber-paln-price">
@@ -104,7 +104,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="ezz-parallax-content">
-                            <i class="fal fa-quote-left"></i>
+                            <i class="fal fa-quote-left mouse-move"></i>
                             <p>Ezzetech are always accommodating our diverse needs and we feel like they are a part of our company rather than an external supplier.</p>
                             <span>JHON. json helman.</span>
                         </div>
