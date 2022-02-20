@@ -47,6 +47,7 @@ The contents of This file are outlined below >>>>
         24. FAQ PAGE CSS
         25. CASE STUDY PAGE CSS
         26. PRELOADER CSS
+        27.TESTIMONIAL CSS
 
 
 
@@ -3285,4 +3286,51 @@ a.visit-link:hover,
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
     }
+}
+
+/************************************************
+     -------*** 27.TESTIMONIAL CSS ***-------
+                ----------------
+*************************************************/
+.ezze-testimonial-area-start {
+    background: #F3F8FC;
+}
+
+.single-testimonial {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.single-testimonial img {
+    width: 100px!important;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 3px solid var(--pcolor);
+    margin: 0 auto;
+}
+
+.ezze-testimonial-area-slider {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.single-testimonial h4 {
+    font-size: 18px;
+    margin: 10px 0 0px 0;
+}
+
+.single-testimonial span {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: var(--pcolor);
+    text-transform: capitalize;
+}
+
+.single-testimonial p {
+    font-size: 15px;
+    color: #7d7d7d;
 }

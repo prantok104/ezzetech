@@ -26,7 +26,7 @@
         *************************************************/
         setTimeout(function() {
             $('.loader-bg').fadeOut();
-        }, 3000);
+        }, 30);
 
 
 
@@ -196,6 +196,44 @@
                     return element.find("img");
                 },
             },
+        });
+
+
+        /************************************************
+         -------*** 13. TESTIMONIAL JS ***-------
+         -------------------
+         *************************************************/
+        $('.ezze-testimonial-area-slider').owlCarousel({
+            animateOut: 'fadeOutLeft',
+            animateIn: 'fadeInRight',
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 4500,
+            autoplayHoverPause: true,
+            nav: false,
+            dots: false,
+            center: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                },
+                1900: {
+                    items: 3
+                }
+            }
         });
 
 

@@ -269,6 +269,94 @@
 </div>
 <!--Photos area end-->
 
+
+<!--Count area start-->
+<section class="ezze-count-area-start">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ezze-count-content">
+                    <div class="ezze-single-content">
+                        <div class="ezze-count-icon">
+                            <i class="fal fa-umbrella"></i>
+                        </div>
+                        <div class="ezze-count-body">
+                            <span class="counter">500</span>
+                            <h3>Projects Completed</h3>
+                        </div>
+                    </div>
+                    <div class="ezze-single-content">
+                        <div class="ezze-count-icon">
+                            <i class="fal fa-users"></i>
+                        </div>
+                        <div class="ezze-count-body">
+                            <span class="counter">1505</span>
+                            <h3>Satisfied Clients</h3>
+                        </div>
+                    </div>
+                    <div class="ezze-single-content">
+                        <div class="ezze-count-icon">
+                            <i class="fal fa-headset"></i>
+                        </div>
+                        <div class="ezze-count-body">
+                            <span class="counter">150</span>
+                            <h3>Experienced Staffs</h3>
+                        </div>
+                    </div>
+                    <div class="ezze-single-content">
+                        <div class="ezze-count-icon">
+                            <i class="fal fa-trophy-alt"></i>
+                        </div>
+                        <div class="ezze-count-body">
+                            <span class="counter">15</span>
+                            <h3>Internation Awards</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Count area end-->
+
+<!--testimonial area start-->
+<div class="ezze-testimonial-area-start space">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ezze-emplo-title ezze-about-area-context">
+                    <span class="title-sub">See What about</span>
+                    <h4 class="d-flex align-items-center justify-content-between"><span>our customers <span class="text-color">are saying</span></span> <a href="javascript:void(0)">View All</a></h4>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="ezze-testimonial-area-slider owl-carousel owl-theme">
+                    <div class="single-testimonial">
+                        <img src="assets/images/client/1.png" alt="testimonial">
+                        <h4>Mr. Jhon Haxel</h4>
+                        <span>Director of Lunas</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto corporis ex illum iusto quam qui vel voluptate voluptatum. A cupiditate excepturi maiores nostrum!</p>
+                    </div>
+                    <div class="single-testimonial">
+                        <img src="assets/images/client/1.png" alt="testimonial">
+                        <h4>Mr. Jhon Haxel</h4>
+                        <span>Director of Lunas</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto corporis ex illum iusto quam qui vel voluptate voluptatum. A cupiditate excepturi maiores nostrum!</p>
+                    </div>
+                    <div class="single-testimonial">
+                        <img src="assets/images/client/1.png" alt="testimonial">
+                        <h4>Mr. Jhon Haxel</h4>
+                        <span>Director of Lunas</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto corporis ex illum iusto quam qui vel voluptate voluptatum. A cupiditate excepturi maiores nostrum!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--testimonial area end-->
+
 <!-- Contact area start -->
 <div class="ezze-contact-area-start space-top">
     <div class="container">
