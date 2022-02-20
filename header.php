@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <!-- Site Title-->
-    <title>Welcome to Bangladesh Parliament</title>
+    <title>EzzeTech</title>
     <!--Remove below this code before responsive layouts for WordPress theme conversion-->
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -19,8 +19,6 @@
 
 
     <!-- Place favicon.ico in the root directory -->
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
     <link rel="icon" href="assets/images/logo/logo.png">
 
     <!-- Animate CSS-->
@@ -38,9 +36,6 @@
     <!-- FontAwesome CSS-->
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
 
-    <!-- Modal Video CSS-->
-    <link rel="stylesheet" href="assets/css/modal.video.min.css">
-
     <!-- Normalize CSS-->
     <link rel="stylesheet" href="assets/css/normalize.css">
 
@@ -50,26 +45,11 @@
     <!-- Owl Carousel Theme Default CSS-->
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
-    <!-- Scroller CSS-->
-    <link rel="stylesheet" href="assets/css/scroller.css">
-
-    <!-- Selectizer CSS-->
-    <link rel="stylesheet" href="assets/css/selectize.default.css">
-
-    <!-- Chart CSS-->
-    <link rel="stylesheet" href="assets/css/Chart.min.css">
-
-    <!-- FlexSlider CSS-->
-    <link rel="stylesheet" href="assets/css/flexslider.css">
-
-    <!-- FlexSlider CSS-->
+    <!-- HeadLine CSS-->
     <link rel="stylesheet" href="assets/css/headline.css">
 
-    <!-- Calendar CSS-->
-    <link rel="stylesheet" href="assets/css/fullcalendar.min.css">
-
-    <!-- PrettyPhoto CSS -->
-    <link rel="stylesheet" href="assets/css/prettyPhoto.css">
+    <!-- Magnific-popup CSS-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
     <!-- Style ( Main Stylesheet ) CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -86,6 +66,13 @@
 </head>
 
 <body>
+<!--Pre-Loader area start-->
+<div class="loader-bg">
+    <div class="loader"></div>
+</div>
+<!--Pre-Loader area end-->
+
+
     <!-- Header area start -->
     <header class="ezze-header-area-start">
         <div class="ezze-logo-area">

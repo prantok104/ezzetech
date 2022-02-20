@@ -248,22 +248,22 @@
     </div>
     <div class="ezze-photo-gallery owl-carousel owl-theme gallery">
         <div class="ezze-single-photo">
-            <a href="assets/images/photo-gallery/1.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/1.jpg" alt="Photo gallery"></a>
+            <a href="assets/images/photo-gallery/1.jpg" title="Program title"><img src="assets/images/photo-gallery/1.jpg" alt="Photo gallery"></a>
         </div>
         <div class="ezze-single-photo">
-            <a href="assets/images/photo-gallery/2.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/2.jpg" alt="Photo gallery"></a>
+            <a href="assets/images/photo-gallery/2.jpg" title="Program title"><img src="assets/images/photo-gallery/2.jpg" alt="Photo gallery"></a>
         </div>
         <div class="ezze-single-photo">
-            <a href="assets/images/photo-gallery/3.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/3.jpg" alt="Photo gallery"></a>
+            <a href="assets/images/photo-gallery/3.jpg" title="Program title"><img src="assets/images/photo-gallery/3.jpg" alt="Photo gallery"></a>
         </div>
         <div class="ezze-single-photo">
-            <a href="assets/images/photo-gallery/4.png" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/4.png" alt="Photo gallery"></a>
+            <a href="assets/images/photo-gallery/4.png" title="Program title"><img src="assets/images/photo-gallery/4.png" alt="Photo gallery"></a>
         </div>
         <div class="ezze-single-photo">
-            <a href="assets/images/photo-gallery/1.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/1.jpg" alt="Photo gallery"></a>
+            <a href="assets/images/photo-gallery/1.jpg" title="Program title"><img src="assets/images/photo-gallery/1.jpg" alt="Photo gallery"></a>
         </div>
         <div class="ezze-single-photo">
-            <a href="assets/images/photo-gallery/2.jpg" rel="prettyPhoto[gallery1]" title="Program title"><img src="assets/images/photo-gallery/2.jpg" alt="Photo gallery"></a>
+            <a href="assets/images/photo-gallery/2.jpg" title="Program title"><img src="assets/images/photo-gallery/2.jpg" alt="Photo gallery"></a>
         </div>
     </div>
 </div>

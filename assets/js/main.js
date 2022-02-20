@@ -5,19 +5,17 @@
               -------*** JS Table ***-------
                      ----------------
 
-              01. PRELOADER JS
-              02. BOTTOMtoTOP JS
-              03. COURSE SLIDER JS
-              04. STICKY HEADER JS
-              05. COUNTER-UP JS
-              06. AOS ANIMATION JS
-              07. MODAL VIDEO JS
-              08. PARALLAX JS
-              09. VANILLA TILT JS
-              10. MOBILE MENU JS
-              11. CLIENT SLIDER JS
-              12. TESTIMONIAL JS
-
+         01. PRELOADER JS
+         02. COUNTER-UP JS
+         03. AOS ANIMATION JS
+         04. PARALLAX JS
+         05. VANILLA TILT JS
+         06. MOBILE MENU JS
+         07. About SLIDER JS
+         08. SERVICE CLICK AND ACTIVE JS
+         09. BTM TO TOP PERCENTAGE JS
+         10. SEARCH OPTION SHOW AND HIDE JS
+         11. CASE STUDY ISOTOPE JS
 
         *****************************************/
 
@@ -27,73 +25,13 @@
                         ----------------
         *************************************************/
         setTimeout(function() {
-            $('.preloader').fadeOut();
-        }, 30);
+            $('.loader-bg').fadeOut();
+        }, 3000);
 
 
 
         /************************************************
-             -------*** 02. BOTTOMtoTOP JS ***-------
-                         ----------------
-        *************************************************/
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 600) {
-                $('.btm-to-top').show();
-            } else {
-                $('.btm-to-top').hide();
-            }
-        });
-
-
-
-        /************************************************
-             -------*** 03. COURSE SLIDER JS ***-------
-                         ----------------
-        *************************************************/
-        $('.educa-course-slider').owlCarousel({
-            loop: true,
-            margin: 25,
-            autoplay: true,
-            smartSpeed: 3000,
-            nav: false,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 2
-                },
-                480: {
-                    items: 2
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 6
-                },
-                1200: {
-                    items: 6
-                }
-            }
-        });
-
-
-
-        /************************************************
-             -------*** 04. STICKY HEADER JS ***-------
-                         -----------------
-        *************************************************/
-        $(window).scroll(function() {
-            var sticky = $('.headerclass'),
-                scroll = $(window).scrollTop();
-            if (scroll < 200) sticky.removeClass('sticky');
-            else sticky.addClass('sticky').animate({
-                scrollTop: 0
-            }, 1000);
-        });
-
-
-        /************************************************
-             -------*** 05. COUNTER-UP JS ***-------
+             -------*** 02. COUNTER-UP JS ***-------
                          --------------
         *************************************************/
         $('.counter').counterUp({
@@ -103,19 +41,13 @@
 
 
         /************************************************
-             -------*** 06. AOS ANIMATION JS ***-------
+             -------*** 03. AOS ANIMATION JS ***-------
                          -----------------
         *************************************************/
         AOS.init();
 
         /************************************************
-             -------*** 07. MODAL VIDEO JS ***-------
-                         -----------------
-        *************************************************/
-        $(".js-modal-btn").modalVideo();
-
-        /************************************************
-             -------*** 08. PARALLAX JS ***-------
+             -------*** 04. PARALLAX JS ***-------
                          -------------
         *************************************************/
         $('.ezze-cyber-parallax-area-start').parallax({
@@ -123,7 +55,7 @@
         });
 
         /************************************************
-             -------*** 09. VANILLA TILT JS ***-------
+             -------*** 05. VANILLA TILT JS ***-------
                          ----------------
         *************************************************/
         VanillaTilt.init(document.querySelectorAll(".mouse-move"), {
@@ -132,7 +64,7 @@
         });
 
         /************************************************
-             -------*** 10. MOBILE MENU JS ***-------
+             -------*** 06. MOBILE MENU JS ***-------
                          ----------------
         *************************************************/
         $('#mobile-menu').slicknav({
@@ -140,7 +72,7 @@
         });
 
         /************************************************
-             -------*** 11. About SLIDER JS ***-------
+             -------*** 07. About SLIDER JS ***-------
                         -------------------
         *************************************************/
         $('.ezze-photo-gallery').owlCarousel({
@@ -176,77 +108,8 @@
             }
         });
 
-
         /************************************************
-             -------*** 12. CLIENT JS ***-------
-                        -------------------
-        *************************************************/
-        $('.educa-client-slider').owlCarousel({
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            loop: true,
-            margin: 15,
-            autoplay: true,
-            autoplayTimeout: 4500,
-            nav: false,
-            dots: false,
-            center: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 3
-                },
-                1200: {
-                    items: 3
-                }
-            }
-        });
-
-
-        /************************************************
-             -------*** 13. NEWSCROLLER JS ***-------
-                        -------------------
-        *************************************************/
-        $('.newsticker').liScroll({
-            travelocity: 0.07
-        });
-
-        /************************************************
-             -------*** 14. SEARCH MP'S AREA JS ***-------
-                        -------------------
-        *************************************************/
-        $('.bp-mp-area').selectize({});
-
-        /************************************************
-             -------*** 15. GALLERY JS ***-------
-                        -------------------
-        *************************************************/
-        $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: "thumbnails"
-        });
-        /************************************************
-             -------*** 16. POPUP JS JS ***-------
-                        -------------------
-        *************************************************/
-        $('#calendar-btn').on('click', function() {
-            $('.bp-event-calender').toggle('fast');
-        });
-        $('.close-btn').on('click', function() {
-            $('.bp-event-calender').hide('fast');
-        });
-
-
-        /************************************************
-             -------*** 17. Services click active JS ***-------
+             -------*** 08. SERVICE CLICK AND ACTIVE JS ***-------
                         -------------------
         *************************************************/
         $('.single-grab-area i').click(function() {
@@ -263,7 +126,7 @@
 
 
         /************************************************
-             -------*** 18. Btm to top Percentage JS ***-------
+             -------*** 09. BTM TO TOP PERCENTAGE JS ***-------
                         -------------------
         *************************************************/
         $(() => {
@@ -283,19 +146,10 @@
         });
 
 
-
-        var myDate = new Date();
-        myDate.setDate(myDate.getDate() + 2);
-        $("#countdown").countdown(myDate, function(event) {
-            $(this).html(
-                event.strftime(
-                    '<div class="timer-wrapper"><div class="time">%D</div><span class="text">days</span></div><div class="timer-wrapper"><div class="time">%H</div><span class="text">hrs</span></div><div class="timer-wrapper"><div class="time">%M</div><span class="text">mins</span></div><div class="timer-wrapper"><div class="time">%S</div><span class="text">sec</span></div>'
-                )
-            );
-        });
-
-
-        // Search Option show and hide
+        /************************************************
+         -------*** 10. SEARCH OPTION SHOW AND HIDE JS ***-------
+         -------------------
+         *************************************************/
         $('#search-btn').on('click', function(){
            $('.ezze-search-area-start').toggleClass('open-search');
         });
@@ -304,7 +158,10 @@
         });
 
 
-        // init Isotope
+        /************************************************
+         -------*** 11. CASE STUDY ISOTOPE JS ***-------
+         -------------------
+         *************************************************/
         var $grid = $('.ezze-case-study-projects').isotope({
             percentPosition: true,
             itemSelector: '.ezze-single-case-study-content',
@@ -313,6 +170,32 @@
         $('.filter-button-group').on( 'click', 'button', function() {
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({ filter: filterValue });
+        });
+
+        /************************************************
+         -------*** 12. PHOTO GALLERY JS ***-------
+         -------------------
+         *************************************************/
+        $(".gallery").magnificPopup({
+            delegate: "a",
+            type: "image",
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: "mfp-with-zoom mfp-img-mobile",
+            image: {
+                verticalFit: true,
+                titleSrc: function (item) {
+                    return item.el.attr("title") ;
+                },
+            },
+            gallery: { enabled: true },
+            zoom: {
+                enabled: true,
+                duration: 300,
+                opener: function (element) {
+                    return element.find("img");
+                },
+            },
         });
 
 

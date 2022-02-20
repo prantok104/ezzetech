@@ -1,11 +1,9 @@
+
 @charset "utf-8";
 
 /*
 ***********************************
- Theme Name     : EzzeTech Ltd.
- Theme URI      : http://www.etl.com.bd/
- Author Name    : PRANTOK104
- Author URI     : www.wedevsteam.com
+ Theme Name     : EzzeTech.
  Text Domain    : ezze
  License        : GNU General Public License v2 or later
  License URI    : http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,10 +21,32 @@ The contents of This file are outlined below >>>>
       -------*** CSS Table ***-------
              ----------------
 
-    01. IMPORT FONTS
-    02. DEFAULT CSS
-    03. PRELOADER CSS
-    04. BOTTOMtoTOP CSS
+    	01. IMPORT FONTS
+    	02. DEFAULT CSS
+        03. HEADER TOP CSS
+        04. HERO CONTENT CSS
+        05. CO-BRAND CSS
+        06. SERVICE AREA CSS
+        07. Btm to Top CSS
+        08. ABOUT AREA CSS
+        09. EMPLOYEE AREA CSS
+        10. PHOTO GALLERY AREA CSS
+        11. CONTACT US CSS
+        12. SEARCH AREA CSS
+        13. SERVICE AREA CSS
+        14. SERVICE PAGE CSS
+        15. ABOUT PAGE COUNT AREA CSS
+        16. MANAGED SERVICES PAGE CSS
+        17. CYBER SECURITY PAGE CSS
+        18. CONTACT PAGE CSS
+        19. NEWS PAGE CSS
+        20. NEWS STYLE TWO PAGE CSS
+        21. NEWS STYLE BLOG PAGE CSS
+        22. MULTI-FUNCTIONAL SERVICE PAGE CSS
+        23. 404 PAGE CSS
+        24. FAQ PAGE CSS
+        25. CASE STUDY PAGE CSS
+        26. PRELOADER CSS
 
 
 
@@ -48,6 +68,7 @@ The contents of This file are outlined below >>>>
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -94,6 +115,8 @@ a:visited,
 a:focus {
     text-decoration: none;
     display: inline-block;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out
 }
 
@@ -118,25 +141,34 @@ img {
 }
 
 
-/*************************************
-        01. Header Top CSS
-*************************************/
+/************************************************
+     -------*** 03. HEADER TOP CSS ***-------
+                ----------------
+*************************************************/
 
 .ezze-header-area-start {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 100px;
     border-bottom: 1px solid #f1f1f1;
     background: #fff;
-    z-index: 9999999999999;
+    z-index: 999;
 }
 
 ul#menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -155,6 +187,8 @@ ul#menu li a {
     font-size: 20px;
     position: relative;
     z-index: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
     display: inherit;
@@ -171,8 +205,11 @@ ul#menu li.active a:before {
     border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
     background: #238de6;
     z-index: -1;
+    -webkit-animation: wave 7s linear infinite;
     animation: wave 7s linear infinite;
     opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
@@ -182,12 +219,16 @@ ul#menu li.active a:before {
 
 ul#menu li a:hover:before {
     opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
 ul#menu li a:hover,
 ul#menu li.active a {
     color: #fff;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
@@ -200,6 +241,8 @@ ul#menu li ul.sub-menu {
     top: 122px;
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -232,10 +275,10 @@ ul#menu li ul.sub-menu li a:hover {
     border: 1px solid var(--pcolor);
 }
 
-
-/*************************************
-        02. Hero Content CSS
-*************************************/
+/************************************************
+     -------*** 04. HERO CONTENT CSS ***-------
+                ----------------
+*************************************************/
 
 .ezze-main-area-start {
     background: url('../images/elements/dots.png') no-repeat center center / cover;
@@ -246,8 +289,14 @@ ul#menu li ul.sub-menu li a:hover {
 
 .ezze-main-content-area {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 103px;
 }
@@ -331,8 +380,14 @@ ul#menu li ul.sub-menu li a:hover {
 .ezze-circle-bg {
     width: 366px;
     height: 385px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 auto;
     position: relative;
@@ -348,7 +403,20 @@ ul#menu li ul.sub-menu li a:hover {
     content: '';
     background: url(../images/elements/circle.png) no-repeat center center/ contain;
     z-index: -1;
+    -webkit-animation: rotateme 60s infinite linear;
     animation: rotateme 60s infinite linear;
+}
+
+@-webkit-keyframes rotateme {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes rotateme {
@@ -390,18 +458,27 @@ ul#menu li ul.sub-menu li a:hover {
     text-align: justify;
 }
 
-
-/* CoBrands area css */
+/************************************************
+     -------*** 05. CO-BRAND CSS ***-------
+                ----------------
+*************************************************/
 
 .ezze-cobrand-area-start {
+    -webkit-box-shadow: 0 10px 50px 0 rgb(53 82 99 / 9%);
     box-shadow: 0 10px 50px 0 rgb(53 82 99 / 9%);
     padding: 40px 0;
     background: #F3F8FC;
 }
 
 .ezze-cobrand-context-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -412,26 +489,39 @@ ul#menu li ul.sub-menu li a:hover {
 
 .ezze-cobrand-context-body {
     width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .ezze-cobrand-context-body a > img {
     width: 100%;
     padding: 23px;
+    -webkit-filter: grayscale(100%) brightness(1.1);
     filter: grayscale(100%) brightness(1.1);
     opacity: 0.5;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .ezze-cobrand-context-body a > img:hover {
+    -webkit-filter: grayscale(0);
     filter: grayscale(0);
     opacity: 1;
 }
 
 
-/* Services area css */
+/************************************************
+     -------*** 06. SERVICE AREA CSS ***-------
+                ----------------
+*************************************************/
 
 .ezze-service-area-start {
     position: relative;
@@ -466,37 +556,57 @@ ul#menu li ul.sub-menu li a:hover {
 }
 
 .single-grab-area:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .single-grab-area:nth-child(3) {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
 .single-grab-area:nth-child(4) {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 
 .single-grab-area:nth-child(5) {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
 .single-grab-area:nth-child(6) {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
     transform: rotate(225deg);
 }
 
 .single-grab-area:nth-child(7) {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
     transform: rotate(270deg);
 }
 
 .single-grab-area:nth-child(8) {
+    -webkit-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
     transform: rotate(315deg);
 }
 
 .ezze-service-context {
     height: 681px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -504,8 +614,14 @@ ul#menu li ul.sub-menu li a:hover {
     width: 80px;
     height: 80px;
     background: #182C55;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     top: -80px;
     position: relative;
@@ -513,6 +629,8 @@ ul#menu li ul.sub-menu li a:hover {
     font-size: 33px;
     border: 1px solid #324978;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -532,12 +650,42 @@ ul#menu li ul.sub-menu li a:hover {
     border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
     margin-left: 25px;
     margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-animation: wave 7s linear infinite;
     animation: wave 7s linear infinite;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
     transform: translate(0);
+}
+
+@-webkit-keyframes wave {
+    20% {
+        border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+    }
+
+    40% {
+        border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+    }
+
+    60% {
+        border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+    }
+
+    80% {
+        border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+    }
 }
 
 @keyframes wave {
@@ -572,13 +720,22 @@ ul#menu li ul.sub-menu li a:hover {
 }
 
 
-/* Btm to top */
+/************************************************
+     -------*** 07.Btm to Top CSS ***-------
+                ----------------
+*************************************************/
 
 .progress {
     width: 60px;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-radius: 50%;
     font-size: 16px;
@@ -592,23 +749,37 @@ ul#menu li ul.sub-menu li a:hover {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background: #fff;
 }
 
 .progress-value a {
     color: var(--pcolor);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
-
-/* About area css*/
+/************************************************
+     -------*** 08.ABOUT AERA CSS ***-------
+                ----------------
+*************************************************/
 
 span.title-sub {
     color: var(--pcolor);
@@ -633,14 +804,21 @@ span.title-sub {
 }
 
 ul.ezze-about-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 30px;
     margin-top: 38px;
 }
 
 ul.ezze-about-lists li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 46.5%;
     font-size: 13px;
@@ -648,14 +826,18 @@ ul.ezze-about-lists li {
     padding: 13px 10px;
     background: #fff;
     border-radius: 3px;
+    -webkit-box-shadow: 0 2px 48px 0 rgb(0 123 255 / 12%);
     box-shadow: 0 2px 48px 0 rgb(0 123 255 / 12%);
     overflow: hidden;
     position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     z-index: 0;
 }
 
 ul.ezze-about-lists li.active {
+    background-image: -o-linear-gradient(45deg, var(--pcolor), #57b2ff);
     background-image: linear-gradient(45deg, var(--pcolor), #57b2ff);
     color: #fff;
 }
@@ -667,19 +849,28 @@ ul.ezze-about-lists li:before {
     width: 100%;
     height: 0;
     content: '';
+    background-image: -o-linear-gradient(45deg, var(--pcolor), #57b2ff);
     background-image: linear-gradient(45deg, var(--pcolor), #57b2ff);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     z-index: -1;
 }
 
 ul.ezze-about-lists li:hover {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
     transform: translateY(-6px);
     color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 ul.ezze-about-lists li:hover:before {
     height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -725,19 +916,35 @@ ul.ezze-about-lists li i {
 }
 
 .ezze-recent-work-context {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .ezze-recent-single-area {
     padding: 85px 50px;
     text-align: center;
+    -webkit-box-shadow: 0 34px 46px rgb(197 205 216 / 30%);
     box-shadow: 0 34px 46px rgb(197 205 216 / 30%);
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -753,6 +960,7 @@ section.ezze-recent-work-area-start {
 .ezze-recent-single-area img {
     width: 100px;
     height: 100px;
+    -o-object-fit: contain;
     object-fit: contain;
     border-radius: 50%;
     background: #fff;
@@ -809,12 +1017,19 @@ a.title {
 .recent-image-bg {
     width: 140px;
     height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background: var(--pcolor);
     margin-bottom: 50px;
     border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+    -webkit-animation: wave 7s linear infinite;
     animation: wave 7s linear infinite;
 }
 
@@ -841,7 +1056,11 @@ img.achi-element {
 }
 
 .ezze-achi-area-context {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -864,6 +1083,8 @@ img.achi-element {
 .ezze-project-title {
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     top: 0;
     background: #eff4f9;
@@ -877,10 +1098,18 @@ img.achi-element {
 }
 
 
-/*Employee css*/
+
+/************************************************
+     -------*** 09.EMPLOYEE AREA CSS ***-------
+                ----------------
+*************************************************/
 
 .ezze-all-employee-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 40px;
 }
@@ -896,12 +1125,14 @@ img.achi-element {
 .emploee-image-area img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     padding-top: 5px;
 }
 
 .single-employee-context {
     width: 24%;
+    -webkit-box-shadow: 0 34px 46px rgb(197 205 216 / 30%);
     box-shadow: 0 34px 46px rgb(197 205 216 / 30%);
     max-height: 420px;
     overflow: hidden;
@@ -929,6 +1160,8 @@ img.achi-element {
     text-align: center;
     padding: 8px 10px;
     position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     z-index: 0;
     background: #fff;
@@ -954,16 +1187,28 @@ img.achi-element {
 }
 
 ul.social-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 15px 0;
     gap: 9px;
 }
 
 ul.social-icon li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 40px;
     height: 40px;
@@ -973,11 +1218,16 @@ ul.social-icon li a {
 }
 
 .single-employee-context:hover .employee-info {
+    -webkit-transform: translateY(-61px);
+    -ms-transform: translateY(-61px);
     transform: translateY(-61px);
 }
 
 
-/*PhotoGallery css*/
+/************************************************
+     -------*** 10.PHOTO GALLERY AREA CSS ***-------
+                ----------------
+*************************************************/
 
 .ezze-photo-area-satrt {
     background: #F3F8FC;
@@ -999,19 +1249,24 @@ ul.social-icon li a {
 .ezze-single-photo a img {
     width: 100%;
     height: 332px;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
 .ezze-photo-gallery.ezze-photo-gallery.owl-carousel .owl-item .ezze-single-photo a img {
+    -webkit-filter: grayscale(1) blur(2px);
     filter: grayscale(1) blur(2px);
 }
 
 .ezze-photo-gallery.ezze-photo-gallery.owl-carousel .owl-item.center a img {
+    -webkit-filter: blur(0);
     filter: blur(0);
 }
 
-
-/*Contact us css*/
+/************************************************
+     -------*** 11.CONTACT US CSS ***-------
+                ----------------
+*************************************************/
 
 .ezze-contact-area-start {
     background-image: url(../images/contact/contactbg.jpg);
@@ -1059,6 +1314,8 @@ ul.footer-menu li a {
 }
 
 ul.footer-menu {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
 }
 
@@ -1080,6 +1337,8 @@ ul.footer-menu {
     color: #fff;
     padding: 15px 10px;
     text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1095,12 +1354,20 @@ ul.footer-menu {
     width: 50px;
     height: 50px;
     color: #fff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-radius: 50%;
     font-size: 22px;
     margin-right: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1133,14 +1400,21 @@ ul.footer-menu li a:hover {
 }
 
 .footer-social-icon-area a:hover {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 
-/* Search  area CSS*/
+/************************************************
+     -------*** 12.SEARCH AREA CSS ***-------
+                ----------------
+*************************************************/
 .ezze-search-area-start {
     margin-top: 100px;
     background: #F1F3F4;
     height: 0;
+    -webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
     transition: height 0.3s ease-in-out;
     overflow: hidden;
 }
@@ -1150,8 +1424,14 @@ ul.footer-menu li a:hover {
 }
 
 .ezze-input-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
     height: 140px;
@@ -1185,11 +1465,20 @@ ul.footer-menu li a:hover {
 }
 
 
-/* Service page CSS*/
+/************************************************
+     -------*** 13.SERVICE AREA CSS ***-------
+                ----------------
+*************************************************/
 .ezze-services-area-start {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1223,7 +1512,11 @@ ul.footer-menu li a:hover {
     color: #BEBEBE;
 }
 
-/*Service Page CSS*/
+
+/************************************************
+     -------*** 14.SERVICE PAGE CSS ***-------
+                ----------------
+*************************************************/
 .ezze-bread-area-satrt {
     text-align: center;
     color: #fff;
@@ -1267,10 +1560,17 @@ ul.footer-menu li a:hover {
 }
 
 .ezze-all-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -1281,14 +1581,25 @@ ul.footer-menu li a:hover {
 .ezze-single-main-service {
     padding: 55px 30px;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     gap: 25px;
     border-radius: 7px;
     width: 31.5%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1311,12 +1622,16 @@ ul.footer-menu li a:hover {
 .ezze-single-main-service:hover {
     background: var(--pcolor);
     color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .ezze-single-main-service:hover a,
 .ezze-single-main-service:hover i {
     color: #fff;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
@@ -1339,21 +1654,36 @@ ul.footer-menu li a:hover {
     font-size: 38px;
 }
 
-/*About page count area*/
+/************************************************
+     -------*** 15.ABOUT PAGE COUNT AREA CSS ***-------
+                ----------------
+*************************************************/
 section.ezze-count-area-start {
     background: var(--pcolor);
     color: #fff;
 }
 
 .ezze-count-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .ezze-single-content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     gap: 13px;
     padding: 100px 15px;
@@ -1378,10 +1708,19 @@ section.ezze-count-area-start {
     background: var(--pcolor);
 }
 
-/*Managed Services css*/
+/************************************************
+     -------*** 16.MANAGED SERVICES PAGE CSS ***-------
+                ----------------
+*************************************************/
 .ezze-managed-all-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 30px;
 }
@@ -1392,6 +1731,8 @@ section.ezze-count-area-start {
     background: #F3F6F9;
     border-radius: 0;
     width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1400,6 +1741,8 @@ section.ezze-count-area-start {
     font-weight: 500;
     color: #8D8EA3;
     text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1412,6 +1755,8 @@ section.ezze-count-area-start {
     font-size: 40px;
     margin-bottom: 25px;
     color: #8D8EA3;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1419,11 +1764,15 @@ section.ezze-count-area-start {
     font-size: 14px;
     color: #8D8EA3;
     text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .single-managed-service:hover {
     background: var(--pcolor);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1431,6 +1780,8 @@ section.ezze-count-area-start {
 .single-managed-service:hover p,
 .single-managed-service:hover i {
     color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1443,26 +1794,41 @@ section.ezze-count-area-start {
 }
 
 .ezze-com-all-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .ezze-single-com-service {
     width: 31.5%;
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     gap: 25px;
     padding: 30px;
     border: 1px solid #234385;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .ezze-single-com-service:hover {
     border-color: var(--pcolor);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1484,10 +1850,19 @@ section.ezze-count-area-start {
     color: #a1b2c3;
 }
 
-/*Cyber security space css*/
+/************************************************
+     -------*** 17.CYBER SECURITY PAGE CSS ***-------
+                ----------------
+*************************************************/
 .ezze-cyber-content-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1498,6 +1873,7 @@ section.ezze-count-area-start {
 
 .ezze-single-cyber-area:nth-child(2n + 0) {
     background: #fff;
+    -webkit-box-shadow: 0 10px 60px rgb(0 0 0 / 10%);
     box-shadow: 0 10px 60px rgb(0 0 0 / 10%);
     border-bottom: 10px solid var(--pcolor);
 }
@@ -1560,6 +1936,8 @@ a.plan-btn {
     margin-bottom: 35px;
     border-radius: 4px;
     border: 1px solid #000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1623,20 +2001,33 @@ p.cyber-security-list-title {
 
 .ezz-parallax-content i {
     font-size: 69px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     margin-bottom: 86px;
     width: 150px;
     height: 150px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-radius: 50%;
     background: var(--pcolor);
     border-bottom: 4px solid #fff;
 }
 
-/* Contact page css */
+/************************************************
+     -------*** 18.CONTACT PAGE CSS ***-------
+                ----------------
+*************************************************/
 .ezze-contact-area-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background: #fff;
 }
@@ -1647,8 +2038,14 @@ p.cyber-security-list-title {
     color: #fff;
     padding: 22px;
     min-height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     position: relative;
     overflow: hidden;
@@ -1685,6 +2082,8 @@ p.cyber-security-list-title {
 }
 
 .ezze-single-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
@@ -1707,19 +2106,31 @@ p.cyber-security-list-title {
 
 .ezze-contact-left ul li {
     margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 19px;
 }
 
 .ezze-contact-footer a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 40px;
     height: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: #fff;
     border: 1px solid #35a0fa;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1739,7 +2150,25 @@ p.cyber-security-list-title {
     background: var(--pcolor);
     color: #fff;
     padding: 15px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.ezze-single-part input::-webkit-input-placeholder, .ezze-single-part textarea::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+.ezze-single-part input::-moz-placeholder, .ezze-single-part textarea::-moz-placeholder {
+    font-size: 14px;
+}
+
+.ezze-single-part input:-ms-input-placeholder, .ezze-single-part textarea:-ms-input-placeholder {
+    font-size: 14px;
+}
+
+.ezze-single-part input::-ms-input-placeholder, .ezze-single-part textarea::-ms-input-placeholder {
+    font-size: 14px;
 }
 
 .ezze-single-part input::placeholder,
@@ -1748,17 +2177,31 @@ p.cyber-security-list-title {
 }
 
 .ezze-contact-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
-/* News page design css*/
+/************************************************
+     -------*** 19.NEWS PAGE CSS ***-------
+                ----------------
+*************************************************/
 
 .ezz-news-single-style {
     border-bottom: 1px solid #ddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     gap: 30px;
     padding-bottom: 30px;
@@ -1778,6 +2221,7 @@ p.cyber-security-list-title {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -1787,11 +2231,17 @@ p.cyber-security-list-title {
 }
 
 .ezze-news-image-area img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .ezz-news-single-style:hover .ezze-news-image-area img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -1801,6 +2251,8 @@ p.cyber-security-list-title {
     font-weight: 300;
     display: block;
     margin-bottom: 21px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1823,13 +2275,23 @@ p.cyber-security-list-title {
 }
 
 .ezze-paginate-area-start {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .ezze-paginate-area-start .paginate {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 10px;
 }
@@ -1838,6 +2300,8 @@ p.cyber-security-list-title {
     border: 1px solid var(--pcolor);
     padding: 5px 15px;
     text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1847,17 +2311,30 @@ p.cyber-security-list-title {
     color: #fff;
 }
 
-/* News style two css*/
+/************************************************
+     -------*** 20.NEWS STYLE TWO PAGE CSS ***-------
+                ----------------
+*************************************************/
 .ezze-news-style-two-all-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 30px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .ezze-news-style-two-all-content .style-two {
     width: 48%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
     padding: 0;
     margin: 0;
@@ -1868,8 +2345,12 @@ p.cyber-security-list-title {
     width: 100%;
 }
 
-/* News Blog style css*/
+/************************************************
+     -------*** 21.NEWS STYLE BLOG PAGE CSS ***-------
+                ----------------
+*************************************************/
 .ezze-blog-single {
+    -webkit-box-shadow: 0 34px 46px rgb(197 205 216 / 30%);
     box-shadow: 0 34px 46px rgb(197 205 216 / 30%);
     margin-bottom: 30px;
 }
@@ -1914,6 +2395,26 @@ p.cyber-security-list-title {
     border: 1px solid #ddd;
 }
 
+.ezze-sidebar-body form input#search::-webkit-input-placeholder {
+    text-transform: capitalize;
+    color: #c3b8b8;
+}
+
+.ezze-sidebar-body form input#search::-moz-placeholder {
+    text-transform: capitalize;
+    color: #c3b8b8;
+}
+
+.ezze-sidebar-body form input#search:-ms-input-placeholder {
+    text-transform: capitalize;
+    color: #c3b8b8;
+}
+
+.ezze-sidebar-body form input#search::-ms-input-placeholder {
+    text-transform: capitalize;
+    color: #c3b8b8;
+}
+
 .ezze-sidebar-body form input#search::placeholder {
     text-transform: capitalize;
     color: #c3b8b8;
@@ -1955,7 +2456,10 @@ ul.category-widget li a:hover {
 }
 
 ul.tags-widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -1973,8 +2477,14 @@ ul.tags-widget li a:hover {
 }
 
 .single-recent-posts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     gap: 10px;
     padding-bottom: 15px;
@@ -1990,6 +2500,7 @@ ul.tags-widget li a:hover {
 
 .single-recent-posts img {
     width: 35%;
+    -o-object-fit: cover;
     object-fit: cover;
     height: 75px;
 }
@@ -2028,14 +2539,22 @@ ul.details li {
 }
 
 .single-page-tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 30px;
     gap: 10px;
 }
 
 .tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 10px;
 }
@@ -2051,8 +2570,14 @@ ul.details li {
 }
 
 .share a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 50px;
     height: 50px;
@@ -2061,8 +2586,12 @@ ul.details li {
 }
 
 .share {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .ezze-comment-area-start input, .ezze-comment-area-start textarea {
@@ -2108,7 +2637,11 @@ ul.details li {
     margin-right: 11px;
 }
 
-/*Multifunction service css*/
+
+/************************************************
+     -------*** 22.MULTI-FUNCTIONAL SERVICE PAGE CSS ***-------
+                ----------------
+*************************************************/
 .ezze-function-content-area {
     padding: 80px;
     background: var(--pcolor);
@@ -2126,6 +2659,8 @@ ul.details li {
 }
 
 .ezze-function-foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 30px;
     margin-top: 30px;
@@ -2138,6 +2673,8 @@ ul.details li {
     text-transform: uppercase;
     outline: none;
     color: var(--pcolor);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out
 }
 
@@ -2153,8 +2690,14 @@ ul.details li {
 }
 
 .ezze-function-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 30px;
 }
@@ -2175,23 +2718,55 @@ ul.details li {
     background: var(--pcolor);
 }
 
+.ezze-function-form input::-webkit-input-placeholder {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.ezze-function-form input::-moz-placeholder {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.ezze-function-form input:-ms-input-placeholder {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.ezze-function-form input::-ms-input-placeholder {
+    color: #fff;
+    text-transform: capitalize;
+}
+
 .ezze-function-form input::placeholder {
     color: #fff;
     text-transform: capitalize;
 }
 
 .ezze-muliple-stone {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 30px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .ezze-single-function-item {
     background: #1abc9c3b;
     padding: 40px 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
     text-align: center;
     border-radius: 5px;
@@ -2271,31 +2846,63 @@ ul.details li {
     color: #0097e6;
 }
 .ezze-single-function-item:hover{
+    -webkit-animation: shake .85s cubic-bezier(0.36, 0.07, 0.019, 0.97) both;
     animation: shake .85s cubic-bezier(0.36, 0.07, 0.019, 0.97) both;
+    -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-perspective: 1000px;
     perspective: 1000px;
 }
-@keyframes shake {
+@-webkit-keyframes shake {
     10%, 90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
         transform: translate3d(-1px, 0, 0);
     }
 
     20%, 80% {
+        -webkit-transform: translate3d(2px, 0, 0);
         transform: translate3d(2px, 0, 0);
     }
 
     30%, 50%, 70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
         transform: translate3d(-4px, 0, 0);
     }
 
     40%, 60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
+}
+@keyframes shake {
+    10%, 90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        -webkit-transform: translate3d(4px, 0, 0);
         transform: translate3d(4px, 0, 0);
     }
 }
 
 
-/*404 error page*/
+/************************************************
+     -------*** 23.404 PAGE CSS ***-------
+                ----------------
+*************************************************/
 .ezze-error-area-content {
     text-align: center;
 }
@@ -2323,7 +2930,10 @@ ul.details li {
     color: var(--pcolor);
 }
 
-/* FAQ page css */
+/************************************************
+     -------*** 24.FAQ PAGE CSS ***-------
+                ----------------
+*************************************************/
 .ezze-looking-area-start {
     background: url('../images/elements/dots.png');
     background-position: center;
@@ -2389,6 +2999,8 @@ ul.details li {
     padding: 25px;
     border: none;
     outline: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2432,13 +3044,23 @@ ul.details li {
 
 .ezze-faq-area-content .card-header button:focus {
     outline: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
-/*Case study page css*/
+/************************************************
+     -------*** 25.CASE STUDY PAGE CSS ***-------
+                ----------------
+*************************************************/
 .case-study-all-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 30px;
 }
@@ -2449,6 +3071,8 @@ ul.details li {
     padding: 18px 25px;
     text-transform: capitalize;
     background: #F3F8FC;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 .case-study-all-btn button:hover{
@@ -2471,7 +3095,10 @@ ul.details li {
 .ezze-case-study-image img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2481,16 +3108,30 @@ ul.details li {
     bottom: -100%;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .ezze-case-project-link a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 40px;
     height: 40px;
@@ -2524,6 +3165,8 @@ ul.details li {
     line-height: 1.2;
     font-weight: 500;
     color: #212529;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2532,6 +3175,8 @@ ul.details li {
 }
 
 .ezze-single-case-study-content:hover .ezze-case-study-image img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -2549,4 +3194,95 @@ a.visit-link:hover,
     background: transparent;
     color: var(--pcolor);
     border: 1px solid var(--pcolor);
+}
+
+
+
+/************************************************
+     -------*** 26.PRELOADER CSS ***-------
+                ----------------
+*************************************************/
+
+
+.loader-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: var(--pcolor);
+    left: 0;
+    top: 0;
+}
+
+.loader-bg .loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px)
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    border: 1em solid #ffffff;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: loader 2s linear infinite;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+
+.loader:before {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+
+    50% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+
+    50% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
 }

@@ -99,54 +99,23 @@
 <!--Easing JS-->
 <script src="assets/js/vendor/easing.min.js"></script>
 
-<!--Scrolling Nav JS-->
-<script src="assets/js/vendor/scrolling.nav.min.js"></script>
-
-<!--Iscroll JS-->
-<script src="assets/js/vendor/iscroll.min.js"></script>
-
 <!--Slicknav JS-->
 <script src="assets/js/vendor/jquery.slicknav.min.js"></script>
 
 <!--Parallax JS-->
 <script src="assets/js/vendor/parallax.min.js"></script>
 
-<!--Modal Video JS-->
-<script src="assets/js/vendor/modal.video.min.js"></script>
-
 <!--Vanilla Tilt JS-->
 <script src="assets/js/vendor/vanillatilt.min.js"></script>
-
-<!--Newsscoller JS-->
-<script src="assets/js/scroller.js"></script>
-
-<!--Selectize JS-->
-<script src="assets/js/selectize.min.js"></script>
-
-<!--Chart JS-->
-<script src="assets/js/Chart.min.js"></script>
 
 <!--Chart JS-->
 <script src="assets/js/headline.js"></script>
 
-<!-- PrettyPhoto js -->
-<script src="assets/js/jquery.prettyPhoto.js"></script>
-
-<!--FlexSlider JS-->
-<script src="assets/js/jquery.flexslider-min.js"></script>
-
-<!--Calendar JS-->
-<script src="assets/js/jquery-ui.custom.min.js"></script>
-<script src="assets/js/fullcalendar.js"></script>
-
-<!--Canvas js-->
-<script src="assets/js/jquery.canvasjs.min.js"></script>
-
-<!--Canvas js-->
-<script src="assets/js/vendor/countdown-timer.js"></script>
-
 <!--Isotope js-->
 <script src="assets/js/isotope.pkgd.min.js"></script>
+
+<!--Magnific Popup js-->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
 
 <!-- Main JS-->
 <script src="assets/js/main.js"></script>
