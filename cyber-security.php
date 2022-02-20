@@ -99,7 +99,7 @@
 <!--Cybe security area end-->
 
     <!--cyber page parallux area start-->
-        <div class="ezze-cyber-parallax-area-start space" style="background: url('assets/images/service/bg.jpg') no-repeat fixed center center/ cover">
+        <div class="ezze-cyber-parallax-area-start space" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">

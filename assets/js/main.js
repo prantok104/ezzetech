@@ -118,8 +118,8 @@
              -------*** 08. PARALLAX JS ***-------
                          -------------
         *************************************************/
-        $('.classname').parallax({
-            imageSrc: 'assets/images/newslater-bg.png'
+        $('.ezze-cyber-parallax-area-start').parallax({
+            imageSrc: 'assets/images/service/bg.jpg'
         });
 
         /************************************************
@@ -303,6 +303,17 @@
             $('.ezze-search-area-start').toggleClass('open-search');
         });
 
+
+        // init Isotope
+        var $grid = $('.ezze-case-study-projects').isotope({
+            percentPosition: true,
+            itemSelector: '.ezze-single-case-study-content',
+        });
+        // filter items on button click
+        $('.filter-button-group').on( 'click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
 
 
 

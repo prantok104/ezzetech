@@ -2434,6 +2434,111 @@ ul.details li {
     outline: none;
     box-shadow: none;
 }
+
+/*Case study page css*/
+.case-study-all-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.case-study-all-btn button {
+    border: 1px solid #F3F8FC;
+    outline: none;
+    padding: 18px 25px;
+    text-transform: capitalize;
+    background: #F3F8FC;
+    transition: all 0.3s ease-in-out;
+}
+.case-study-all-btn button:hover{
+    background: var(--pcolor);
+    color: #fff;
+}
+
+.ezze-single-case-study-content {
+    width: 33.3%;
+    margin-bottom: 15px;
+}
+
+.ezze-case-study-image {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ezze-case-study-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.ezze-case-project-link {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.ezze-case-project-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--pcolor);
+    color: #ffff;
+    border-radius: 50%;
+}
+
+.ezze-case-project-link:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #000;
+    z-index: -1;
+    opacity: .4;
+}
+
+.ezze-case-study-content span {
+    display: block;
+    padding: 10px 0;
+    color: var(--pcolor);
+    text-transform: uppercase;
+}
+
+.ezze-case-study-content a {
+    font-size: 25px;
+    display: block;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #212529;
+    transition: all 0.3s ease-in-out;
+}
+
+.ezze-case-study-content a:hover {
+    color: var(--pcolor);
+}
+
+.ezze-single-case-study-content:hover .ezze-case-study-image img {
+    transform: scale(1.1);
+}
+
+
+.ezze-single-case-study-content:hover .ezze-case-project-link {
+    bottom: 0%;
+}
 /* Hover Design*/
 
 .ezze-header-right-context a:hover,

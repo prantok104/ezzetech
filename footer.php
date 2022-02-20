@@ -145,6 +145,9 @@
 <!--Canvas js-->
 <script src="assets/js/vendor/countdown-timer.js"></script>
 
+<!--Isotope js-->
+<script src="assets/js/isotope.pkgd.min.js"></script>
+
 <!-- Main JS-->
 <script src="assets/js/main.js"></script>
 
