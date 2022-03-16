@@ -78,6 +78,28 @@ The contents of This file are outlined below >>>>
     --pcolor: #238DE6;
     --hcolor: #178BE9;
 }
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1B1F20;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--pcolor);
+}
+
+::-moz-selection {
+    background: var(--pcolor);
+    color: #fff
+}
+
+::selection {
+    background: var(--pcolor);
+    color: #fff
+}
+
 
 .text-color {
     color: var(--pcolor);
@@ -275,6 +297,11 @@ ul#menu li ul.sub-menu li a:hover {
     border-radius: 6px;
     border: 1px solid var(--pcolor);
 }
+
+.mobile-menu-area-start{
+    display: none;
+}
+
 
 /************************************************
      -------*** 04. HERO CONTENT CSS ***-------

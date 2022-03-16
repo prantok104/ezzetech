@@ -16,6 +16,8 @@
          09. BTM TO TOP PERCENTAGE JS
          10. SEARCH OPTION SHOW AND HIDE JS
          11. CASE STUDY ISOTOPE JS
+         12. PHOTO GALLERY JS
+         13. TESTIMONIAL JS
 
         *****************************************/
 
@@ -67,8 +69,8 @@
              -------*** 06. MOBILE MENU JS ***-------
                          ----------------
         *************************************************/
-        $('#mobile-menu').slicknav({
-            prependTo: '#mobile-menu-here'
+        $('#menu').slicknav({
+            prependTo: '.responsive-mobile-menu'
         });
 
         /************************************************
@@ -134,7 +136,7 @@
                 var height = $('body').innerHeight();
                 var currentPosition = window.pageYOffset;
 
-                var percent = (currentPosition * 100 / height) + 14;
+                var percent = (currentPosition * 100 / height) + 11;
                 percent = percent;
                 return Math.floor(percent);
             }
@@ -143,6 +145,12 @@
                 $('.progress').css('background', 'conic-gradient("#000"' + ' ' + percentageCount() + '"%", "red"' + ' ' + percentageCount() + '"%")');
                 $('#output-value').html(percentageCount() + '%');
             });
+        });
+
+        $('.btm-to-top').click(function(){
+            $('body,html').animate({
+                scrollTop:0
+            }, 1000)
         });
 
 

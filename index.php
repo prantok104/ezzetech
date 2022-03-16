@@ -339,15 +339,15 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto corporis ex illum iusto quam qui vel voluptate voluptatum. A cupiditate excepturi maiores nostrum!</p>
                     </div>
                     <div class="single-testimonial">
-                        <img src="assets/images/client/1.png" alt="testimonial">
-                        <h4>Mr. Jhon Haxel</h4>
-                        <span>Director of Lunas</span>
+                        <img src="assets/images/client/2.png" alt="testimonial">
+                        <h4>Miss. Luna Haxel</h4>
+                        <span>Director of Facebook</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto corporis ex illum iusto quam qui vel voluptate voluptatum. A cupiditate excepturi maiores nostrum!</p>
                     </div>
                     <div class="single-testimonial">
-                        <img src="assets/images/client/1.png" alt="testimonial">
-                        <h4>Mr. Jhon Haxel</h4>
-                        <span>Director of Lunas</span>
+                        <img src="assets/images/client/3.png" alt="testimonial">
+                        <h4>Mr. Max Haxel</h4>
+                        <span>Director of Microsoft</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto corporis ex illum iusto quam qui vel voluptate voluptatum. A cupiditate excepturi maiores nostrum!</p>
                     </div>
                 </div>

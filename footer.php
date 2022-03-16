@@ -68,7 +68,7 @@
 <!-- <a href="#home" class="nav-link js-scroll-trigger btm-to-top"><i class="fal fa-long-arrow-up"></i></a> -->
 <div class="progress">
     <div class="progress-value">
-        <a href="#home" class="nav-link js-scroll-trigger" id="output-value">0%</a>
+        <a href="#home" class="nav-link js-scroll-trigger btm-to-top" id="output-value">0%</a>
     </div>
 </div>
 

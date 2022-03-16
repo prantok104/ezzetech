@@ -65,12 +65,39 @@
   <![endif]-->
 </head>
 
-<body>
+<body id="home">
 <!--Pre-Loader area start-->
 <div class="loader-bg">
     <div class="loader"></div>
 </div>
 <!--Pre-Loader area end-->
+
+
+
+<!--Mobile menu area start-->
+<div class="mobile-menu-area-start" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mobile-menu-content">
+                    <div class="mobile-logo">
+                        <a href="index.php"><img src="assets/images/logo/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="mobile-search ezze-input-group">
+                        <form action="#" method="POST" class="position-relative">
+                            <input type="text" name="search" id="search" placeholder="Type here ...">
+                            <button class="mobile-search-btn"><i class="fal fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="responsive-mobile-menu">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile menu area end-->
 
 
     <!-- Header area start -->

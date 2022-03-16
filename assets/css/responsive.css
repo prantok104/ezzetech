@@ -1,4 +1,5 @@
 /*Responsive menu*/
+
 .mobile-menu {
     display: flex;
     align-items: center;
@@ -14,12 +15,15 @@
     padding: 0;
     position: relative;
 }
+
 .slicknav_menu .slicknav_icon-bar {
-    background-color: #2FBF9E;
+    background-color: #238de6;
 }
-.slicknav_btn{
+
+.slicknav_btn {
     margin: 0;
 }
+
 a.slicknav_btn.slicknav_collapsed {
     margin: 0;
     background: transparent;
@@ -48,9 +52,11 @@ ul.slicknav_nav {
 span.slicknav_menutxt {
     display: none!important;
 }
+
 .slicknav_menu .slicknav_icon-bar {
-    background-color: #2FBF9E;
+    background-color: #238de6;
 }
+
 ul.slicknav_nav li a {
     margin: 0;
     color: #000;
@@ -60,13 +66,17 @@ ul.slicknav_nav li a {
 ul.slicknav_nav li {
     border-bottom: 1px solid #f1f1f1;
 }
+
 ul.slicknav_nav li:last-child {
     border: 0;
 }
-.slicknav_nav .slicknav_row, .slicknav_nav a {
+
+.slicknav_nav .slicknav_row,
+.slicknav_nav a {
     padding: 13px;
     margin: 0;
 }
+
 .slicknav_nav .slicknav_arrow {
     display: none;
 }
@@ -87,15 +97,19 @@ ul.slicknav_nav li a {
 a.slicknav_item.slicknav_row {
     padding: 0;
 }
-.slicknav_nav .slicknav_item a, .slicknav_nav .slicknav_parent-link a {
+
+.slicknav_nav .slicknav_item a,
+.slicknav_nav .slicknav_parent-link a {
     padding: 13px;
     margin: 0;
     display: flex;
     border-radius: 0;
 }
+
 .slicknav_nav a:hover {
     border-radius: 0;
 }
+
 ul.slicknav_nav li:last-child {
     border: 0;
 }
@@ -124,27 +138,280 @@ ul.slicknav_nav li:last-child {
     align-items: center;
     gap: 9px;
 }
+
+
 /* For 767 Resolution */
-@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
 
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .mobile-menu-area-start {
+        display: inline-flex;
+        background: #EFF5F9;
+        z-index: 999;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    header.ezze-header-area-start {
+        display: none;
+    }
+    .mobile-menu-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .mobile-logo a>img {
+        width: 87px;
+    }
+    .mobile-search.ezze-input-group {
+        width: 66%;
+        height: auto;
+    }
+    .mobile-search input {
+        padding: 6px 6px 6px 27px;
+    }
+    .mobile-search button.mobile-search-btn {
+        padding: 8px;
+    }
+    .ezze-main-content-area {
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+    .ezze-main-context-area strong {
+        font-size: 35px;
+    }
+    .cd-headline.clip {
+        margin-top: 10px;
+    }
+    .ezze-main-context-area h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    .ezze-main-context-area strong {
+        margin-bottom: 13px;
+    }
+    .ezze-main-context-area p {
+        font-size: 15px;
+    }
+    .ezze-service-area-start img {
+        width: 100%;
+        position: absolute;
+        left: -60px;
+        top: 150px;
+    }
+    .ezze-total-grab-area {
+        width: 230px;
+        height: 230px;
+        margin-top: 452px;
+    }
+    .single-grab-area i {
+        width: 50px;
+        height: 50px;
+        top: -51px;
+        font-size: 23px;
+    }
+    .ezze-service-context {
+        height: 798px;
+    }
+    .ezze-service-output {
+        width: 180px;
+        height: 180px;
+    }
+    .ezze-service-output h1 {
+        font-size: 17px;
+    }
+    .ezze-service-output span {
+        font-size: 13px;
+    }
+    .ezze-circle-bg {
+        width: 280px;
+        height: 280px;
+    }
+    .ezze-circle-context strong>span {
+        font-size: 80px;
+    }
+    .ezze-circle-context span {
+        font-size: 20px;
+    }
+    .ezze-circle-context strong {
+        font-size: 50px;
+    }
+    .ezze-main-content-area {
+        height: 90vh;
+    }
+    .ezze-main-context-right-circle.mouse-move {
+        order: 1;
+    }
+    .ezze-main-context-area {
+        order: 2;
+    }
+    .ezze-cobrand-context-body {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .ezze-cobrand-context-body a img {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        filter: grayscale(0);
+        opacity: 1;
+    }
+    .space {
+        padding: 60px 0;
+    }
+    .ezze-about-area-context h4 {
+        font-size: 30px;
+    }
+    .ezze-cobrand-context-body a {
+        width: 47%;
+    }
+    ul.ezze-about-lists {
+        gap: 10px;
+    }
+    ul.ezze-about-lists li {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .ezze-about-images {
+        height: auto;
+    }
+    .ezze-about-images img {
+        position: relative;
+        left: 0!important;
+        top: 0!important;
+        width: 100%!important;
+        height: auto!important;
+    }
+    img.achi-element {
+        display: none;
+    }
+    .ezze-about-area-image {
+        margin-top: 11px;
+    }
+    .ezze-recent-single-area {
+        order: 2;
+    }
+    .ezze-recent-single-area.center {
+        order: 1;
+    }
+    .ezze-achi-area-start {
+        padding: 50px 0;
+    }
+    .ezze-achi-area-context {
+        flex-wrap: wrap;
+        gap: 39px;
+    }
+    .ezze-photo-gallery.owl-carousel .owl-item:nth-child(even) {
+        margin-top: 0;
+    }
+    .ezze-photo-gallery.owl-carousel {
+        margin-top: 70px;
+    }
+    .ezze-single-content {
+        padding: 20px 15px;
+    }
+    .ezze-service-context.aos-init.aos-animate {
+        overflow: hidden;
+    }
+    .ezze-service-area-start {
+        overflow: hidden;
+    }
+    .ezze-cyber-parallax-area-start p {
+        font-size: 26px;
+    }
+    .ezze-df-project-title h1 {
+        font-size: 27px;
+    }
+    .case-study-all-btn button {
+        padding: 12px 13px;
+        margin-bottom: 5px;
+    }
+    .ezze-looking-area-content p {
+        width: 100%;
+    }
+    .share a {
+        width: 35px;
+        height: 35px;
+    }
+    aside.ezze-sidebar-area-start {
+        margin-top: 25px;
+    }
+    .ezze-contact-area-start {
+        height: 810px;
+        background-position: bottom right;
+    }
+    ul.footer-menu {
+        margin: 20px 0
+    }
+    .ezze-contact-footer a {
+        border-radius: 50%;
+        border-color: #2c6fa6;
+    }
+    .ezze-single-part {
+        flex-flow: column;
+    }
+    .ezze-looking-area-start.space {
+        background: #238DE6;
+    }
+    .ezze-looking-area-start:after {
+        opacity: 0;
+    }
+    div#accordion {
+        margin-bottom: 15px;
+    }
+    .ezze-recent-work-context,
+    .ezze-count-content,
+    .ezze-cobrand-context-area,
+    .ezze-all-employee-area,
+    .ezze-services-area-start,
+    .ezze-managed-all-services,
+    .ezze-cyber-content-area,
+    .ezz-news-single-style,
+    .tags,
+    .ezze-contact-area-content {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .ezze-main-context-area,
+    .ezze-main-context-right-circle.mouse-move,
+    .ezze-cobrand-context-title,
+    .ezze-cobrand-context-body,
+    .ezze-single-achi,
+    .single-employee-context,
+    .ezze-single-service-area,
+    .ezze-single-main-service,
+    .ezze-single-com-service,
+    .ezze-single-case-study-content,
+    .ezze-news-image-area,
+    .ezze-news-content-area,
+    .ezze-news-style-two-all-content .style-two,
+    .ezze-contact-left,
+    .ezze-contact-right {
+        width: 100%;
+    }
 }
+
 
 /* For 1024 Resolution */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
 
-}
 
 /* For 1366 Resolution */
+
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {}
 
 @media only screen and (min-width: 1367px) {}
 
+
 /* If you're looking to supply different graphics or choose different typography for the lower resolution iPad display, the media queries below will work. */
+
+
 /* Orientation : Landscape */
-@media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {}
 
-@media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {}
+@media only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 768px) and (max-device-width: 1007px) {}
 
-@media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 3) {}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {}
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {}
